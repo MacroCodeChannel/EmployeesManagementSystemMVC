@@ -1,0 +1,89 @@
+﻿@model EmployeesManagement.Models.LeaveApplication
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Edit Leave Application</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="EmployeeId" class="control-label"></label>
+                            <select asp-for="EmployeeId" class="form-control" asp-items="ViewBag.EmployeeId"></select>
+                            <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="NoOfDays" class="control-label"></label>
+                            <input asp-for="NoOfDays" class="form-control" />
+                            <span asp-validation-for="NoOfDays" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="StartDate" class="control-label"></label>
+                            <input asp-for="StartDate" class="form-control" />
+                            <span asp-validation-for="StartDate" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="EndDate" class="control-label"></label>
+                            <input asp-for="EndDate" class="form-control" />
+                            <span asp-validation-for="EndDate" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="DurationId" class="control-label"></label>
+                            <select asp-for="DurationId" class="form-control" asp-items="ViewBag.DurationId"></select>
+                            <span asp-validation-for="DurationId" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="LeaveTypeId" class="control-label"></label>
+                            <select asp-for="LeaveTypeId" class="form-control" asp-items="ViewBag.LeaveTypeId"></select>
+                            <span asp-validation-for="LeaveTypeId" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Attachment" class="control-label"></label>
+                            <input asp-for="Attachment" class="form-control" />
+                            <span asp-validation-for="Attachment" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            }
+        }

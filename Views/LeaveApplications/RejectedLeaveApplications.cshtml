@@ -1,0 +1,89 @@
+﻿@model IEnumerable<EmployeesManagement.Models.LeaveApplication>
+
+@{
+    ViewData["Title"] = "Rejected Leave Applications";
+}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Rejected Leave Applications List</h3>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Employee)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NoOfDays)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.StartDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EndDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Duration)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LeaveType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Attachment)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Employee.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NoOfDays)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StartDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EndDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Duration.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LeaveType.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Attachment)
+                        </td>
+                        <td style="background-color:orangered">
+                            @Html.DisplayFor(modelItem => item.Status.Description)
+                        </td>
+                        <td>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-item"> <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

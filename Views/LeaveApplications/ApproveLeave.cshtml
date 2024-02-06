@@ -1,0 +1,138 @@
+﻿@model EmployeesManagement.Models.LeaveApplication
+@{
+    ViewData["Title"] = "Approve Leave";
+}
+
+
+<form asp-action="ApproveLeave" method="post">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Approve Leave Applications Details</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-sm-3">
+                            @Html.DisplayNameFor(model => model.Employee)
+                        </th>
+                        <td class="col-sm-3">
+                            @Html.DisplayFor(model => model.Employee.FullName)
+                        </td>
+                        <th class="col-sm-3">
+                            @Html.DisplayNameFor(model => model.NoOfDays)
+                        </th>
+                        <td class="col-sm-3">
+                            @Html.DisplayFor(model => model.NoOfDays)
+                        </td>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.StartDate)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.StartDate)
+                        </td>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.EndDate)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.EndDate)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.Duration)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.Duration.Description)
+                        </td>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.LeaveType)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.LeaveType.Name)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.Attachment)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.Attachment)
+                        </td>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.Description)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.Description)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.Status)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.Status.Id)
+                        </td>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.ApprovedById)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.ApprovedById)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.ApprovedOn)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.ApprovedOn)
+                        </td>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.CreatedById)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.CreatedById)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.CreatedOn)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.CreatedOn)
+                        </td>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.ModifiedById)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.ModifiedById)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-sm-3">
+                                @Html.DisplayNameFor(model => model.ModifiedOn)
+                        </th>
+                        <td class="col-sm-3">
+                                @Html.DisplayFor(model => model.ModifiedOn)
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <label asp-for="ApprovalNotes" class="control-label"></label>
+            <textarea class="form-control" asp-for="ApprovalNotes"></textarea>
+            <div class="card-footer">
+                <div class="clearfix">
+                    <a asp-action="Index" class="btn btn-danger push-left">Back to List</a>
+                    <input type="submit" value="Approve Leave Application" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
