@@ -66,7 +66,7 @@ namespace EmployeesManagement.Controllers
                 leaveType.CreatedById = Userid;
                 leaveType.CreatedOn = DateTime.Now;
                 _context.Add(leaveType);
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(Userid);
                 return RedirectToAction(nameof(Index));
             }
             return View(leaveType);
@@ -104,8 +104,13 @@ namespace EmployeesManagement.Controllers
             {
                 try
                 {
-                    _context.Update(leaveType);
-                    await _context.SaveChangesAsync();
+                    var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    //Get Old Values
+                    var oldleavetype = await _context.LeaveTypes.FindAsync(id);
+                    leaveType.ModifiedOn = DateTime.Now;
+                    leaveType.ModifiedById = Userid; 
+                    _context.Entry(oldleavetype).CurrentValues.SetValues(leaveType);
+                    await _context.SaveChangesAsync(Userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -151,8 +156,8 @@ namespace EmployeesManagement.Controllers
             {
                 _context.LeaveTypes.Remove(leaveType);
             }
-
-            await _context.SaveChangesAsync();
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            await _context.SaveChangesAsync(Userid);
             return RedirectToAction(nameof(Index));
         }
 

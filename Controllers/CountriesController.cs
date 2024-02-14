@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EmployeesManagement.Data;
 using EmployeesManagement.Models;
+using System.Security.Claims;
 
 namespace EmployeesManagement.Controllers
 {
@@ -58,8 +59,9 @@ namespace EmployeesManagement.Controllers
         {
             if (ModelState.IsValid)
             {
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 _context.Add(country);
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(Userid);
                 return RedirectToAction(nameof(Index));
             }
             return View(country);

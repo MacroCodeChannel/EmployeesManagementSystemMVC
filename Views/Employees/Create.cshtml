@@ -56,9 +56,16 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="Country" class="control-label"></label>
-                                <input asp-for="Country" class="form-control" />
-                                <span asp-validation-for="Country" class="text-danger"></span>
+                                <label asp-for="GenderId" class="control-label"></label>
+                                <select asp-for="GenderId" class="form-control" asp-items="ViewBag.GenderId"></select>
+                                <span asp-validation-for="GenderId" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="CountryId" class="control-label"></label>
+                                <select asp-for="CountryId" class="form-control" asp-items="ViewBag.CountryId"></select>
+                                <span asp-validation-for="CountryId" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -77,16 +84,16 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="Department" class="control-label"></label>
-                                <input asp-for="Department" class="form-control" />
-                                <span asp-validation-for="Department" class="text-danger"></span>
+                                <label asp-for="DepartmentId" class="control-label"></label>
+                                <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.DepartmentId"></select>
+                                <span asp-validation-for="DepartmentId" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="Designation" class="control-label"></label>
-                                <input asp-for="Designation" class="form-control" />
-                                <span asp-validation-for="Designation" class="text-danger"></span>
+                                <label asp-for="DesignationId" class="control-label"></label>
+                                <select asp-for="DesignationId" class="form-control" asp-items="ViewBag.DesignationId"></select>
+                                <span asp-validation-for="DesignationId" class="text-danger"></span>
                             </div>
                         </div>
                     </div>

@@ -40,12 +40,12 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%) !important;">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
-               <h2>
+                <h5 style="color:white !important">
                     Employees Management System
-                </h2>
+                </h5>
             </ul>
 
             <!-- Right navbar links -->
@@ -171,7 +171,7 @@
         </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%) !important;">
             <!-- Brand Logo -->
             <a href="index3.html" class="brand-link">
                 <img src="~/AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -204,7 +204,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a  asp-controller="Employees" asp-action="Index" class="nav-link">
+                            <a asp-controller="Employees" asp-action="Index" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Employees
@@ -221,7 +221,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a  asp-action="Index" asp-controller="LeaveTypes" class="nav-link">
+                                    <a asp-action="Index" asp-controller="LeaveTypes" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Leave Types</p>
                                     </a>
@@ -233,24 +233,23 @@
                                     </a>
                                     <a asp-action="ApprovedLeaveApplications" asp-controller="LeaveApplications" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Approved Leave Applications</p>
+                                        <p>Approved Applications</p>
                                     </a>
                                     <a asp-action="RejectedLeaveApplications" asp-controller="LeaveApplications" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Rejected Leave Applications</p>
+                                        <p>Rejected Applications</p>
                                     </a>
                                 </li>
                             </ul>
-                    
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-table"></i>
-                            <p>
-                                System Administration
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    System Security
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a asp-action="Index" asp-controller="Users" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -263,6 +262,38 @@
                                         <p>System Roles</p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="SystemProfiles" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>System Profiles</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="Audits" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>System AuditLogs</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="Profiles" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>User Roles</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    System Administration
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+
                                 <li class="nav-item">
                                     <a asp-action="Index" asp-controller="Designations" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -281,33 +312,33 @@
                                         <p>Banks</p>
                                     </a>
                                 </li>
-                            <li class="nav-item">
+                                <li class="nav-item">
                                     <a asp-action="Index" asp-controller="Countries" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Countries</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Countries</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a asp-action="Index" asp-controller="Cities" class=" nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Towns/Cities</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Towns/Cities</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a asp-action="Index" asp-controller="SystemCodes" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>System Code</p>
-                                </a>
-                            </li>
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>System Code</p>
+                                    </a>
+                                </li>
                                 <li class="nav-item">
                                     <a asp-action="Index" asp-controller="SystemCodeDetails" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>System Code Details</p>
                                     </a>
                                 </li>
-                        </ul>
+                            </ul>
                         </li>
-                        </ul>
+                    </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>

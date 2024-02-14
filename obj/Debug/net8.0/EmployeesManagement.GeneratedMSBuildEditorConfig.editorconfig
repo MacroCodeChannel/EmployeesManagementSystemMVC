@@ -186,6 +186,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Audits/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Audits/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Audits/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Audits/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Audits/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Banks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -370,6 +390,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Profiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Profiles/UserRights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcVXNlclJpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -436,6 +464,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/SystemCodes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtQ29kZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/SystemProfiles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtUHJvZmlsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/SystemProfiles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtUHJvZmlsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/SystemProfiles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtUHJvZmlsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/SystemProfiles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtUHJvZmlsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/SystemProfiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtUHJvZmlsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Content Creation/.NET Core Projects/EmployeesManagement/Views/Users/Create.cshtml]
