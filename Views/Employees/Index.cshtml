@@ -1,7 +1,7 @@
-﻿@model IEnumerable<EmployeesManagement.Models.Employee>
+﻿@model EmployeesManagement.ViewModels.EmployeeViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Employees List";
 }
 
 <p>
@@ -19,13 +19,7 @@
                         @Html.DisplayNameFor(model => model.EmpNo)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.FirstName)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.MiddleName)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.LastName)
+                        @Html.DisplayNameFor(model => model.FullName)
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.PhoneNumber)
@@ -34,6 +28,12 @@
                         @Html.DisplayNameFor(model => model.EmailAddress)
                     </th>
 
+                    <th>
+                        @Html.DisplayNameFor(model => model.LeaveOutStandingBalance)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.StatusId)
+                    </th>
                     <th>
                         Edit
                     </th>
@@ -46,26 +46,26 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in Model)
+                @foreach (var item in Model.Employees)
                 {
                     <tr>
                         <td>
                             @Html.DisplayFor(modelItem => item.EmpNo)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.FirstName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.MiddleName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LastName)
+                            @Html.DisplayFor(modelItem => item.FullName)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.PhoneNumber)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.EmailAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LeaveOutStandingBalance)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status.Description)
                         </td>
                         <td>
                             <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-eye"></i> Edit</a>

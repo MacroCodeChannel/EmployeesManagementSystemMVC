@@ -10,7 +10,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-12">
-                <form asp-action="Create">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="row">
                         <div class="col-md-6">
@@ -55,7 +55,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="Attachment" class="control-label"></label>
-                                <input asp-for="Attachment" class="form-control" />
+                                <input class="form-control" type="file" id="photo" name="leaveattachment"
                                 <span asp-validation-for="Attachment" class="text-danger"></span>
                             </div>
                         </div>

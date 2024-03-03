@@ -1,0 +1,69 @@
+﻿@model EmployeesManagement.Models.LeaveAdjustmentEntry
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>LeaveAdjustmentEntry</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="LeavePeriod" class="control-label"></label>
+                <input asp-for="LeavePeriod" class="form-control" />
+                <span asp-validation-for="LeavePeriod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployeeId" class="control-label"></label>
+                <select asp-for="EmployeeId" class="form-control" asp-items="ViewBag.EmployeeId"></select>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoOfDays" class="control-label"></label>
+                <input asp-for="NoOfDays" class="form-control" />
+                <span asp-validation-for="NoOfDays" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaveAdjustmentDate" class="control-label"></label>
+                <input asp-for="LeaveAdjustmentDate" class="form-control" />
+                <span asp-validation-for="LeaveAdjustmentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaveStartDate" class="control-label"></label>
+                <input asp-for="LeaveStartDate" class="form-control" />
+                <span asp-validation-for="LeaveStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaveEndDate" class="control-label"></label>
+                <input asp-for="LeaveEndDate" class="form-control" />
+                <span asp-validation-for="LeaveEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdjustmentDescription" class="control-label"></label>
+                <input asp-for="AdjustmentDescription" class="form-control" />
+                <span asp-validation-for="AdjustmentDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdjustmentTypeId" class="control-label"></label>
+                <select asp-for="AdjustmentTypeId" class="form-control" asp-items="ViewBag.AdjustmentTypeId"></select>
+                <span asp-validation-for="AdjustmentTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

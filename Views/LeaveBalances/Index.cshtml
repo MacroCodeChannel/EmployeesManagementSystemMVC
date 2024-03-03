@@ -1,0 +1,62 @@
+﻿@model IEnumerable<EmployeesManagement.Models.Employee>
+
+@{
+    ViewData["Title"] = "Leave Balances";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Employees Leave Balances</h3>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmpNo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AllocatedLeaveDays)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LeaveOutStandingBalance)
+                    </th>
+                    <th>
+                        View
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmpNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AllocatedLeaveDays)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LeaveOutStandingBalance)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a>
+                        </td>
+                        <td>
+                            <a asp-action="AdjustLeaveBalance" asp-route-id="@item.Id" class="btn btn-success"><i class="fa fa-lock"></i> Adjust</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

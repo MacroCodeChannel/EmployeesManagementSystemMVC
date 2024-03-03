@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EmployeesManagement.Data;
 using EmployeesManagement.Models;
+using System.Security.Claims;
 
 namespace EmployeesManagement.Controllers
 {
@@ -54,14 +55,15 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Code,Description,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] SystemCode systemCode)
+        public async Task<IActionResult> Create(SystemCode systemCode)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(systemCode);
-                await _context.SaveChangesAsync();
+
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            systemCode.CreatedOn = DateTime.Now;
+            systemCode.CreatedById = Userid;
+            _context.Add(systemCode);
+                await _context.SaveChangesAsync(Userid);
                 return RedirectToAction(nameof(Index));
-            }
             return View(systemCode);
         }
 
