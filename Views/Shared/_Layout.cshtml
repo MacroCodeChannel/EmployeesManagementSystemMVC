@@ -307,12 +307,6 @@
                                         <p>System AuditLogs</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a asp-action="Index" asp-controller="Profiles" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>User Roles</p>
-                                    </a>
-                                </li>
                             </ul>
                         </li>
 
@@ -326,7 +320,24 @@
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="ApprovalEntries" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Approval Entries</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="WorkFlowUserGroups" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Workflow User Groups</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="ApprovalsUserMatrices" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Approval User Matrix</p>
+                                    </a>
+                                </li>
                                 <li class="nav-item">
                                     <a asp-action="Index" asp-controller="Designations" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -371,6 +382,23 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    System Settings
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="CompanyInformations" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Company Information</p>
+                                    </a>
+                                </li>
+                                </ul>
+                                </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

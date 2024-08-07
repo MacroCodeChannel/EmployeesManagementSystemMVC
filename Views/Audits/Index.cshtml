@@ -29,12 +29,6 @@
                     <th>
                         @Html.DisplayNameFor(model => model.NewValues)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.AffectedColumns)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.PrimaryKey)
-                    </th>
                     <th>View</th>
                 </tr>
             </thead>
@@ -61,13 +55,7 @@
                             @Html.DisplayFor(modelItem => item.NewValues)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.AffectedColumns)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.PrimaryKey)
-                        </td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                            <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id"><i class="fa fa-eye"> </i> View</a>
                         </td>
                     </tr>
                 }

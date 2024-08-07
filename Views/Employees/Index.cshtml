@@ -4,12 +4,50 @@
     ViewData["Title"] = "Employees List";
 }
 
-<p>
-    <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Employee</a>
-</p>
+<div class="card">
+    <p>
+        <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Employee</a>
+    </p>
+    <div class="card-body">
+        <div class="col-md-12">
+            <form asp-action="Index" enctype="multipart/form-data" class="form-vertical">
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="EmpNo" class="control-label"></label>
+                        <input asp-for="EmpNo" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="FullName" class="control-label"></label>
+                        <input asp-for="FullName" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="PhoneNumber" class="control-label"></label>
+                        <input asp-for="PhoneNumber" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="EmailAddress" class="control-label"></label>
+                        <input asp-for="EmailAddress" type="text" class="form-control" />
+                    </div>
+                    <div class="col-md-2 mt-20">
+                        <button type="submit" class="btn btn-success btn-block mt-20">
+                            <i class="fa fa-search"></i> Search
+                        </button>
+                    </div>
+                    <div class="col-md-2 mt-20">
+                        <button type="button" class="btn btn-default btn-block mt-20">
+                            <i class="fa fa-eraser"></i> Clear
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Employees List</h3>
+        <h3>
+            Employees List
+        </h3>
     </div>
     <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
@@ -81,4 +119,5 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>

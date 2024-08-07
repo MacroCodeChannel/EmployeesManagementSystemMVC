@@ -35,7 +35,9 @@
                     <th>
                         @Html.DisplayNameFor(model => model.ModifiedOn)
                     </th>
-                    <th></th>
+                    <th>Edit</th>
+                    <th>View</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -64,9 +66,14 @@
                             @Html.DisplayFor(modelItem => item.ModifiedOn)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.Id"><i class="fa fa-edit"></i> Edit</a>
+                         
+                        </td>
+                        <td>
+                            <a asp-action="Details" class="btn btn-secondary" asp-route-id="@item.Id"><i class="fa fa-eye"></i> View</a>
+                        </td>
+                        <td>
+                            <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id"><i class="fa fa-trash"></i> Delete</a>
                         </td>
                     </tr>
                 }

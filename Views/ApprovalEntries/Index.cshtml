@@ -1,0 +1,97 @@
+﻿@model IEnumerable<EmployeesManagement.Models.ApprovalEntry>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Approval Entries List</h3>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <thead>
+                <tr>
+                    <th>
+                            @Html.DisplayNameFor(model => model.RecordId)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.DocumentType)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.SequenceNo)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.Approver)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.DateSentForApproval)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.LastModifiedOn)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.LastModifiedBy)
+                    </th>
+                    <th>
+                            @Html.DisplayNameFor(model => model.Comments)
+                    </th>
+                    <th>View</th>
+                    <th>Open</th>
+                    <th>Approve</th>
+                    <th>Reject</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.RecordId)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.DocumentType.Description)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.SequenceNo)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.Approver.FullName)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.Status.Id)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.DateSentForApproval)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.LastModifiedOn)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.LastModifiedBy.FullName)
+                        </td>
+                        <td>
+                                @Html.DisplayFor(modelItem => item.Comments)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a>
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.RecordId" asp-controller="@item.ControllerName" class="btn btn-secondary"><i class="fa fa-folder"></i> Open</a>
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-check"></i> Approve</a>
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-check"></i> Reject</a>
+                        </td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>

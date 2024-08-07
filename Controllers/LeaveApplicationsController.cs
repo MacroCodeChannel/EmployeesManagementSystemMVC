@@ -226,9 +226,9 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( LeaveApplication leaveApplication,IFormFile leaveattachment)
+        public async Task<IActionResult> Create(LeaveApplication leaveApplication, IFormFile leaveattachment)
         {
-            if (leaveattachment.Length > 0)
+            if (leaveattachment != null && leaveattachment.Length > 0)
             {
                 var fileName = "LeaveAttachment_" + DateTime.Now.ToString("yyyymmddhhmmss") + "_" + leaveattachment.FileName;
                 var path = _configuration["FileSettings:UploadFolder"]!;
@@ -238,19 +238,52 @@ namespace EmployeesManagement.Controllers
                 leaveApplication.Attachment = fileName;
             }
 
-            var pendingStatus =  _context.SystemCodeDetails.Include(x => x.SystemCode).Where(y => y.Code == "AwaitingApproval" && y.SystemCode.Code == "LeaveApprovalStatus").FirstOrDefault();
+            var pendingStatus = _context.SystemCodeDetails.Include(x => x.SystemCode).Where(y => y.Code == "AwaitingApproval" && y.SystemCode.Code == "LeaveApprovalStatus").FirstOrDefault();
             var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            leaveApplication.CreatedOn =DateTime.Now;
+            leaveApplication.CreatedOn = DateTime.Now;
             leaveApplication.CreatedById = Userid;
             leaveApplication.StatusId = pendingStatus.Id;
             _context.Add(leaveApplication);
             await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
+          
+
+            //Leave Type
+            var documenttype = await _context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code== "DocumentTypes" && x.Code == "LeaveApplication").FirstOrDefaultAsync();
+
+            // Workflow UserGroup
+            var usergroup = await _context.ApprovalsUserMatrixs.Where(x => x.UserId == Userid && x.DocumentTypeId == documenttype.Id && x.Active==true).FirstOrDefaultAsync();
+
+            var awaitingapproval = _context.SystemCodeDetails.Include(x => x.SystemCode).Where(y => y.Code == "AwaitingApproval" && y.SystemCode.Code == "LeaveApprovalStatus").FirstOrDefault();
+
+            //Approvers
+            var approvers = await _context.WorkFlowUserGroupMembers.Where(x => x.WorkFlowUserGroupId == usergroup.WorkflowUserGroupId && x.SenderId == Userid).ToListAsync();
+
+            foreach (var approver in approvers)
+            {
+                //Generate An Approval Entry
+                var approvalentries = new ApprovalEntry()
+                {
+                    ApproverId = approver.ApproverId,
+                    DateSentForApproval = DateTime.Now,
+                    LastModifiedOn = DateTime.Now,
+                    LastModifiedById = approver.SenderId,
+                    RecordId = leaveApplication.Id,
+                    ControllerName = "LeaveApplications",
+                    DocumentTypeId = documenttype.Id,
+                    SequenceNo = approver.SequenceNo,
+                    StatusId = awaitingapproval.Id,
+                    Comments = "Sent for Approval"
+                 };
+
+                _context.Add(approvalentries);
+                await _context.SaveChangesAsync(Userid);
+            }
+
 
             ViewData["DurationId"] = new SelectList(_context.SystemCodeDetails.Include(x=>x.SystemCode).Where(y => y.SystemCode.Code == "LeaveDuration"), "Id", "Description", leaveApplication.DurationId);
             ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveApplication.EmployeeId);
             ViewData["LeaveTypeId"] = new SelectList(_context.LeaveTypes, "Id", "Name", leaveApplication.LeaveTypeId);
-            return View(leaveApplication);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: LeaveApplications/Edit/5

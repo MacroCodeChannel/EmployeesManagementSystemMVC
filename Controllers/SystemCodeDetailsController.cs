@@ -23,8 +23,12 @@ namespace EmployeesManagement.Controllers
         // GET: SystemCodeDetails
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.SystemCodeDetails.Include(s => s.SystemCode);
-            return View(await applicationDbContext.ToListAsync());
+            var systcodes  = await _context.SystemCodeDetails
+                .Include(s => s.SystemCode)
+                .Include(s=>s.CreatedBy)
+                .ToListAsync();
+
+            return View(systcodes);
         }
 
         // GET: SystemCodeDetails/Details/5

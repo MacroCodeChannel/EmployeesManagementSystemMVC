@@ -10,6 +10,7 @@ using EmployeesManagement.Models;
 using System.Security.Claims;
 using EmployeesManagement.ViewModels;
 using AutoMapper;
+using System.Linq.Expressions;
 
 namespace EmployeesManagement.Controllers
 {
@@ -28,8 +29,34 @@ namespace EmployeesManagement.Controllers
         // GET: Employees
         public async Task<IActionResult> Index(EmployeeViewModel employees)
         {
-            employees.Employees = await _context.Employees.Include(x=>x.Status).ToListAsync();
-         return View(employees);
+            var rawdata = _context.Employees.Include(x=>x.Status).AsQueryable();
+            if (!string.IsNullOrEmpty(employees.FullName.Trim()))
+            {
+                rawdata = rawdata
+                    .Where(x => x.FullName.Contains(employees.FullName));
+            }
+
+            if (employees.PhoneNumber > 0)
+            {
+                rawdata = rawdata
+                    .Where(x => x.PhoneNumber == employees.PhoneNumber);
+            }
+
+            if (!string.IsNullOrEmpty(employees.EmailAddress))
+            {
+                rawdata = rawdata
+                    .Where(x => x.EmailAddress == employees.EmailAddress);
+            }
+
+            if (!string.IsNullOrEmpty(employees.EmpNo))
+            {
+                rawdata = rawdata
+                    .Where(x => x.EmpNo == employees.EmpNo);
+            }
+
+            employees.Employees = await rawdata.ToListAsync();
+
+            return View(employees);
         }
 
         // GET: Employees/Details/5
