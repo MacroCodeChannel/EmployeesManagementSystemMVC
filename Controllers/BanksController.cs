@@ -88,15 +88,13 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Name,AccountNo,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Bank bank)
+        public async Task<IActionResult> Edit(int id, Bank bank)
         {
             if (id != bank.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
                 try
                 {
                     _context.Update(bank);
@@ -114,7 +112,7 @@ namespace EmployeesManagement.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
+            
             return View(bank);
         }
 

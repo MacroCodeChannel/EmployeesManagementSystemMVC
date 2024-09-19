@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\banks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\banks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\banks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\banks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\bankscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\bankscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\companyinformationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\companyinformationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\approvalsusermatricescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\approvalsusermatricescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\systemcodedetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\systemcodedetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -115,14 +139,6 @@
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\approvalsusermatricescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\approvalsusermatricescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\companyinformationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\companyinformationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\models\\workflowusergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:models\\workflowusergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -201,10 +217,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\approvalentries\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\approvalentries\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\shared\\_layoutmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -355,10 +367,6 @@
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\systemcodes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\banks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\banks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\designations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\designations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -409,10 +417,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\bankscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\bankscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\models\\systemprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -846,7 +850,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -854,32 +858,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SystemCodeDetail.cshtml",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodes\\SystemCodeDetail.cshtml",
-              "RelativeDocumentMoniker": "Views\\SystemCodes\\SystemCodeDetail.cshtml",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodes\\SystemCodeDetail.cshtml",
-              "RelativeToolTip": "Views\\SystemCodes\\SystemCodeDetail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T10:22:39.703Z",
+              "DocumentIndex": 5,
+              "Title": "ApprovalsUserMatricesController.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\ApprovalsUserMatricesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApprovalsUserMatricesController.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\ApprovalsUserMatricesController.cs",
+              "RelativeToolTip": "Controllers\\ApprovalsUserMatricesController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAowFYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T16:46:12.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserActivity.cs",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\UserActivity.cs",
-              "RelativeDocumentMoniker": "Models\\UserActivity.cs",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\UserActivity.cs",
-              "RelativeToolTip": "Models\\UserActivity.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAvAAAA",
+              "DocumentIndex": 4,
+              "Title": "AuditsController.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\AuditsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuditsController.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\AuditsController.cs",
+              "RelativeToolTip": "Controllers\\AuditsController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwBgAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-29T16:43:05.174Z"
+              "WhenOpened": "2024-02-10T11:39:26.868Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "CompanyInformationsController.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\CompanyInformationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CompanyInformationsController.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\CompanyInformationsController.cs",
+              "RelativeToolTip": "Controllers\\CompanyInformationsController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAgwEsAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T16:33:01.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "LeaveApplicationsController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\LeaveApplicationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeaveApplicationsController.cs",
@@ -891,33 +909,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Employees\\Index.cshtml",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Index.cshtml",
-              "RelativeToolTip": "Views\\Employees\\Index.cshtml",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAE0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-01-29T16:50:37.818Z",
+              "DocumentIndex": 2,
+              "Title": "BanksController.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\BanksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BanksController.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\BanksController.cs",
+              "RelativeToolTip": "Controllers\\BanksController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAowFoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-03T08:24:25.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Banks\\Edit.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Banks\\Edit.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T14:56:59.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemCodeDetails\\Index.cshtml",
               "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Index.cshtml",
               "RelativeToolTip": "Views\\SystemCodeDetails\\Index.cshtml",
-              "ViewState": "AQIAADsAAAAAAAAAAAAAAEAAAAAtAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-03T08:47:24.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Banks\\Index.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Index.cshtml",
+              "RelativeToolTip": "Views\\Banks\\Index.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-06T16:52:55.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SystemProfilesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\SystemProfilesController.cs",
               "RelativeDocumentMoniker": "Controllers\\SystemProfilesController.cs",
@@ -925,12 +969,47 @@
               "RelativeToolTip": "Controllers\\SystemProfilesController.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAqwGwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-10T08:59:58.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-10T08:59:58.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employees\\Index.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "Views\\Employees\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAE0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-29T16:50:37.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserActivity.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\UserActivity.cs",
+              "RelativeDocumentMoniker": "Models\\UserActivity.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\UserActivity.cs",
+              "RelativeToolTip": "Models\\UserActivity.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-29T16:43:05.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SystemCodeDetail.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodes\\SystemCodeDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemCodes\\SystemCodeDetail.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodes\\SystemCodeDetail.cshtml",
+              "RelativeToolTip": "Views\\SystemCodes\\SystemCodeDetail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T10:22:39.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "SystemCodeDetailsController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\SystemCodeDetailsController.cs",
               "RelativeDocumentMoniker": "Controllers\\SystemCodeDetailsController.cs",
@@ -938,12 +1017,11 @@
               "RelativeToolTip": "Controllers\\SystemCodeDetailsController.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAwBcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-03T08:28:13.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-03T08:28:13.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemCodes\\Index.cshtml",
@@ -951,12 +1029,11 @@
               "RelativeToolTip": "Views\\SystemCodes\\Index.cshtml",
               "ViewState": "AQIAAC4AAAAAAAAAAAAAAC8AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-11T13:35:08.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-11T13:35:08.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "SystemCodesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\SystemCodesController.cs",
               "RelativeDocumentMoniker": "Controllers\\SystemCodesController.cs",
@@ -964,12 +1041,11 @@
               "RelativeToolTip": "Controllers\\SystemCodesController.cs",
               "ViewState": "AQIAABUAAAAAAAAAAIAwwCIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-03T08:27:31.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-03T08:27:31.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\ApprovalEntries\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\ApprovalEntries\\Index.cshtml",
@@ -981,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "HolidaysController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\HolidaysController.cs",
               "RelativeDocumentMoniker": "Controllers\\HolidaysController.cs",
@@ -993,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
@@ -1005,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "ApprovalEntriesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\ApprovalEntriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ApprovalEntriesController.cs",
@@ -1017,7 +1093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -1029,7 +1105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Holiday.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Holiday.cs",
               "RelativeDocumentMoniker": "Models\\Holiday.cs",
@@ -1041,7 +1117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Holidays\\Index.cshtml",
@@ -1053,7 +1129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Holidays\\Edit.cshtml",
@@ -1065,7 +1141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -1077,7 +1153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 206,
+              "DocumentIndex": 207,
               "Title": "20240602192654_UsersForeignKey.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240602192654_UsersForeignKey.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240602192654_UsersForeignKey.cs",
@@ -1089,7 +1165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveTypes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveTypes\\Index.cshtml",
@@ -1101,7 +1177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "WorkFlowUserGroupsController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\WorkFlowUserGroupsController.cs",
               "RelativeDocumentMoniker": "Controllers\\WorkFlowUserGroupsController.cs",
@@ -1113,7 +1189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Cities\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Cities\\Create.cshtml",
@@ -1125,7 +1201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveTypes\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveTypes\\Edit.cshtml",
@@ -1137,7 +1213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "ApprovalEntry.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\ApprovalEntry.cs",
               "RelativeDocumentMoniker": "Models\\ApprovalEntry.cs",
@@ -1149,7 +1225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 207,
+              "DocumentIndex": 208,
               "Title": "20240602191625_ControllerNameApprovalEntry.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240602191625_ControllerNameApprovalEntry.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240602191625_ControllerNameApprovalEntry.cs",
@@ -1161,7 +1237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 208,
+              "DocumentIndex": 209,
               "Title": "20240602191821_ControllerNameApprovalEntry1.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240602191821_ControllerNameApprovalEntry1.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240602191821_ControllerNameApprovalEntry1.cs",
@@ -1173,7 +1249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveTypes\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveTypes\\Create.cshtml",
@@ -1185,7 +1261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "CountriesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\CountriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CountriesController.cs",
@@ -1197,7 +1273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\ApprovalEntries\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\ApprovalEntries\\Details.cshtml",
@@ -1209,7 +1285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "LeaveAdjustmentEntriesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\LeaveAdjustmentEntriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeaveAdjustmentEntriesController.cs",
@@ -1221,7 +1297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
@@ -1233,19 +1309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ApprovalsUserMatricesController.cs",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\ApprovalsUserMatricesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ApprovalsUserMatricesController.cs",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\ApprovalsUserMatricesController.cs",
-              "RelativeToolTip": "Controllers\\ApprovalsUserMatricesController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAowFYAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T16:46:12.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -1257,7 +1321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\ApprovalsUserMatrices\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\ApprovalsUserMatrices\\Index.cshtml",
@@ -1269,7 +1333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "LeavePeriod.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\LeavePeriod.cs",
               "RelativeDocumentMoniker": "Models\\LeavePeriod.cs",
@@ -1281,7 +1345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "20240318184846_WorkflowUpdates.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240318184846_WorkflowUpdates.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240318184846_WorkflowUpdates.cs",
@@ -1293,7 +1357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\WorkFlowUserGroupMembers\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\WorkFlowUserGroupMembers\\Create.cshtml",
@@ -1305,7 +1369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "WorkFlowUserGroup.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\WorkFlowUserGroup.cs",
               "RelativeDocumentMoniker": "Models\\WorkFlowUserGroup.cs",
@@ -1317,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Departments\\Index.cshtml",
@@ -1329,20 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CompanyInformationsController.cs",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\CompanyInformationsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CompanyInformationsController.cs",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\CompanyInformationsController.cs",
-              "RelativeToolTip": "Controllers\\CompanyInformationsController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAkwEQAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T16:33:01.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Users\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Create.cshtml",
@@ -1354,7 +1405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "ApprovalsUserMatrix.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\ApprovalsUserMatrix.cs",
               "RelativeDocumentMoniker": "Models\\ApprovalsUserMatrix.cs",
@@ -1366,7 +1417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 205,
+              "DocumentIndex": 206,
               "Title": "20240320164243_ApprovalUserMatrix.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240320164243_ApprovalUserMatrix.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240320164243_ApprovalUserMatrix.cs",
@@ -1378,7 +1429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\WorkFlowUserGroups\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\WorkFlowUserGroups\\Index.cshtml",
@@ -1390,7 +1441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\WorkFlowUserGroups\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\WorkFlowUserGroups\\Create.cshtml",
@@ -1402,7 +1453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "DesignationsController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\DesignationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\DesignationsController.cs",
@@ -1414,7 +1465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
@@ -1426,7 +1477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 204,
+              "DocumentIndex": 205,
               "Title": "20240318185031_WorkflowUpdates.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240318185031_WorkflowUpdates.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240318185031_WorkflowUpdates.cs",
@@ -1438,7 +1489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Departments\\Create.cshtml",
@@ -1450,7 +1501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\WorkFlowUserGroupMembers\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\WorkFlowUserGroupMembers\\Edit.cshtml",
@@ -1462,7 +1513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\Index.cshtml",
@@ -1474,7 +1525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "WorkFlowUserGroupMembersController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\WorkFlowUserGroupMembersController.cs",
               "RelativeDocumentMoniker": "Controllers\\WorkFlowUserGroupMembersController.cs",
@@ -1486,7 +1537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\ApprovalEntries\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\ApprovalEntries\\Create.cshtml",
@@ -1498,7 +1549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\WorkFlowUserGroupMembers\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\WorkFlowUserGroupMembers\\Index.cshtml",
@@ -1510,7 +1561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 203,
+              "DocumentIndex": 204,
               "Title": "20240314175006_WorkflowUserGroups.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240314175006_WorkflowUserGroups.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240314175006_WorkflowUserGroups.cs",
@@ -1522,7 +1573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 202,
+              "DocumentIndex": 203,
               "Title": "20240313191103_ApprovalEntries.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240313191103_ApprovalEntries.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240313191103_ApprovalEntries.cs",
@@ -1534,7 +1585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Employees\\Create.cshtml",
@@ -1546,7 +1597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "_LayoutModal.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Shared\\_LayoutModal.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LayoutModal.cshtml",
@@ -1558,7 +1609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\Create.cshtml",
@@ -1570,7 +1621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\ApprovalEntries\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\ApprovalEntries\\Edit.cshtml",
@@ -1582,7 +1633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Users\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
@@ -1594,19 +1645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AuditsController.cs",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\AuditsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuditsController.cs",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\AuditsController.cs",
-              "RelativeToolTip": "Controllers\\AuditsController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwBgAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-10T11:39:26.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\CompanyInformations\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\CompanyInformations\\Create.cshtml",
@@ -1618,7 +1657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
@@ -1630,7 +1669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -1642,7 +1681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UserViewModel.cs",
@@ -1654,7 +1693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -1666,7 +1705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\CompanyInformations\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\CompanyInformations\\Edit.cshtml",
@@ -1678,7 +1717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveAdjustmentEntries\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveAdjustmentEntries\\Index.cshtml",
@@ -1690,7 +1729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemProfiles\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemProfiles\\Edit.cshtml",
@@ -1702,7 +1741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Employees\\Details.cshtml",
@@ -1714,7 +1753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "CompanyInformation.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\CompanyInformation.cs",
               "RelativeDocumentMoniker": "Models\\CompanyInformation.cs",
@@ -1726,7 +1765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 201,
+              "DocumentIndex": 202,
               "Title": "20240306163104_CompanyInformation.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240306163104_CompanyInformation.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240306163104_CompanyInformation.cs",
@@ -1738,7 +1777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\CompanyInformations\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\CompanyInformations\\Index.cshtml",
@@ -1750,7 +1789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Audits\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Audits\\Index.cshtml",
@@ -1762,7 +1801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemProfiles\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemProfiles\\Index.cshtml",
@@ -1774,7 +1813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -1786,7 +1825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 78,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Employees\\Edit.cshtml",
@@ -1798,7 +1837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 79,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Employees\\Delete.cshtml",
@@ -1810,7 +1849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 83,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeavePeriods\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\LeavePeriods\\Index.cshtml",
@@ -1822,7 +1861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "EmployeeViewModel.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ViewModels\\EmployeeViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\EmployeeViewModel.cs",
@@ -1834,7 +1873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "AutomapperProfiles.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Profiles\\AutomapperProfiles.cs",
               "RelativeDocumentMoniker": "Profiles\\AutomapperProfiles.cs",
@@ -1846,7 +1885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
@@ -1858,7 +1897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Holidays\\Create.cshtml",
@@ -1870,7 +1909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 75,
               "Title": "LeaveBalancesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\LeaveBalancesController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeaveBalancesController.cs",
@@ -1882,7 +1921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 74,
               "Title": "ApproveLeave.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\ApproveLeave.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\ApproveLeave.cshtml",
@@ -1894,7 +1933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 81,
               "Title": "AdjustLeaveBalance.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveBalances\\AdjustLeaveBalance.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveBalances\\AdjustLeaveBalance.cshtml",
@@ -1906,7 +1945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 200,
+              "DocumentIndex": 201,
               "Title": "20240301163509_EmployeeDisabilitDetails.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240301163509_EmployeeDisabilitDetails.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240301163509_EmployeeDisabilitDetails.cs",
@@ -1918,7 +1957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 80,
               "Title": "LeaveAdjustmentEntry.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\LeaveAdjustmentEntry.cs",
               "RelativeDocumentMoniker": "Models\\LeaveAdjustmentEntry.cs",
@@ -1930,7 +1969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 82,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveAdjustmentEntries\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveAdjustmentEntries\\Create.cshtml",
@@ -1942,7 +1981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 84,
               "Title": "LeavePeriodsController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\LeavePeriodsController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeavePeriodsController.cs",
@@ -1954,7 +1993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 199,
+              "DocumentIndex": 200,
               "Title": "20240223155350_LeavePeriods.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240223155350_LeavePeriods.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240223155350_LeavePeriods.cs",
@@ -1966,7 +2005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 85,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeavePeriods\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\LeavePeriods\\Create.cshtml",
@@ -1978,7 +2017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 86,
               "Title": "20240222174220_LeaveAdjustmentsUpdates.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240222174220_LeaveAdjustmentsUpdates.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240222174220_LeaveAdjustmentsUpdates.cs",
@@ -1990,7 +2029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 87,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveBalances\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveBalances\\Index.cshtml",
@@ -2002,7 +2041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 193,
+              "DocumentIndex": 194,
               "Title": "20240215201531_EmployeePhoto.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240215201531_EmployeePhoto.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240215201531_EmployeePhoto.cs",
@@ -2014,7 +2053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 197,
+              "DocumentIndex": 198,
               "Title": "20240219154928_LeaveAdjustments.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240219154928_LeaveAdjustments.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240219154928_LeaveAdjustments.cs",
@@ -2026,7 +2065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 198,
+              "DocumentIndex": 199,
               "Title": "20240219153744_LeaveBalances.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240219153744_LeaveBalances.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240219153744_LeaveBalances.cs",
@@ -2038,7 +2077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 90,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodes\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemCodes\\Create.cshtml",
@@ -2050,7 +2089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 88,
               "Title": "LeaveTypesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\LeaveTypesController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeaveTypesController.cs",
@@ -2062,7 +2101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 89,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemCodeDetails\\Create.cshtml",
@@ -2074,7 +2113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 196,
+              "DocumentIndex": 197,
               "Title": "20240218070811_UpdatedEmployeesTable.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240218070811_UpdatedEmployeesTable.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240218070811_UpdatedEmployeesTable.cs",
@@ -2086,7 +2125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 194,
+              "DocumentIndex": 195,
               "Title": "20240215162855_Holidays.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240215162855_Holidays.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240215162855_Holidays.cs",
@@ -2098,7 +2137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Cities\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Cities\\Index.cshtml",
@@ -2110,7 +2149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Designations\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Designations\\Index.cshtml",
@@ -2122,7 +2161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Countries\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Countries\\Index.cshtml",
@@ -2134,19 +2173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Banks\\Index.cshtml",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Index.cshtml",
-              "RelativeToolTip": "Views\\Banks\\Index.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAIBJwEMAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-06T16:52:55.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "ProfilesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\ProfilesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProfilesController.cs",
@@ -2158,7 +2185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "Department.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
@@ -2170,7 +2197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 195,
+              "DocumentIndex": 196,
               "Title": "20240213163001_EmployeesChanges.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240213163001_EmployeesChanges.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240213163001_EmployeesChanges.cs",
@@ -2182,7 +2209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "SystemCodeDetail.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\SystemCodeDetail.cs",
               "RelativeDocumentMoniker": "Models\\SystemCodeDetail.cs",
@@ -2194,7 +2221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "Country.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Country.cs",
               "RelativeDocumentMoniker": "Models\\Country.cs",
@@ -2206,7 +2233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "Designation.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Designation.cs",
               "RelativeDocumentMoniker": "Models\\Designation.cs",
@@ -2218,7 +2245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "ProfileViewModel.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ViewModels\\ProfileViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\ProfileViewModel.cs",
@@ -2230,7 +2257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Roles\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Roles\\Index.cshtml",
@@ -2242,7 +2269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "UserRights.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Profiles\\UserRights.cshtml",
               "RelativeDocumentMoniker": "Views\\Profiles\\UserRights.cshtml",
@@ -2254,7 +2281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Profiles\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Profiles\\Index.cshtml",
@@ -2266,7 +2293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 103,
               "Title": "CitiesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\CitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitiesController.cs",
@@ -2278,19 +2305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
-              "Title": "BanksController.cs",
-              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\BanksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BanksController.cs",
-              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\BanksController.cs",
-              "RelativeToolTip": "Controllers\\BanksController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAkwD0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-03T08:24:25.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 104,
               "Title": "SystemProfile.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\SystemProfile.cs",
               "RelativeDocumentMoniker": "Models\\SystemProfile.cs",
@@ -2302,7 +2317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 106,
               "Title": "20240210193305_Roleprofiles.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240210193305_Roleprofiles.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240210193305_Roleprofiles.cs",
@@ -2314,7 +2329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 107,
               "Title": "RoleProfile.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\RoleProfile.cs",
               "RelativeDocumentMoniker": "Models\\RoleProfile.cs",
@@ -2326,7 +2341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 105,
               "Title": "RolesController.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
@@ -2338,7 +2353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 108,
               "Title": "Audit.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Audit.cs",
               "RelativeDocumentMoniker": "Models\\Audit.cs",
@@ -2350,7 +2365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 109,
               "Title": "AuditEntry.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\AuditEntry.cs",
               "RelativeDocumentMoniker": "Models\\AuditEntry.cs",
@@ -2362,7 +2377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 188,
+              "DocumentIndex": 189,
               "Title": "20240210112338_AuditLogs.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240210112338_AuditLogs.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240210112338_AuditLogs.cs",
@@ -2374,7 +2389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 189,
+              "DocumentIndex": 190,
               "Title": "20240210112834_AuditLogsChanges.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240210112834_AuditLogsChanges.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240210112834_AuditLogsChanges.cs",
@@ -2386,7 +2401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 110,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemProfiles\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\SystemProfiles\\Create.cshtml",
@@ -2398,7 +2413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 190,
+              "DocumentIndex": 191,
               "Title": "20240210085824_SystemProfiles.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240210085824_SystemProfiles.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240210085824_SystemProfiles.cs",
@@ -2410,7 +2425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 191,
+              "DocumentIndex": 192,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
@@ -2422,7 +2437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 192,
+              "DocumentIndex": 193,
               "Title": "20240208174625_UpdateUserDetails.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240208174625_UpdateUserDetails.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240208174625_UpdateUserDetails.cs",
@@ -2434,7 +2449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 111,
               "Title": "ConfirmEmailChange.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
@@ -2446,7 +2461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 112,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
@@ -2458,7 +2473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 113,
               "Title": "ExternalLogin.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
@@ -2470,7 +2485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 115,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
@@ -2482,7 +2497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 114,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Error.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Error.cshtml",
@@ -2494,7 +2509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 116,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
@@ -2506,7 +2521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 117,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
@@ -2518,7 +2533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 118,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
@@ -2530,7 +2545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 119,
               "Title": "_ManageNav.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
@@ -2542,7 +2557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 120,
               "Title": "_StatusMessage.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
@@ -2554,7 +2569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 121,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
@@ -2566,7 +2581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 122,
               "Title": "ChangePassword.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
@@ -2578,7 +2593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 123,
               "Title": "DeletePersonalData.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
@@ -2590,7 +2605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 124,
               "Title": "Disable2fa.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
@@ -2602,7 +2617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 125,
               "Title": "DownloadPersonalData.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
@@ -2614,7 +2629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 126,
               "Title": "Email.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
@@ -2626,7 +2641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 127,
               "Title": "EnableAuthenticator.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
@@ -2638,7 +2653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 128,
               "Title": "ExternalLogins.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
@@ -2650,7 +2665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 129,
               "Title": "GenerateRecoveryCodes.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml.cs",
@@ -2662,7 +2677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 130,
               "Title": "ManageNavPages.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
@@ -2674,7 +2689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 131,
               "Title": "PersonalData.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml.cs",
@@ -2686,7 +2701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 132,
               "Title": "ResetAuthenticator.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml.cs",
@@ -2698,7 +2713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 133,
               "Title": "SetPassword.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml.cs",
@@ -2710,7 +2725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 134,
               "Title": "ShowRecoveryCodes.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml.cs",
@@ -2722,7 +2737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 135,
               "Title": "TwoFactorAuthentication.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
@@ -2734,7 +2749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 136,
               "Title": "AccessDenied.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
@@ -2746,7 +2761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 137,
               "Title": "ConfirmEmail.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
@@ -2758,7 +2773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 138,
               "Title": "ForgotPassword.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
@@ -2770,7 +2785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 139,
               "Title": "ForgotPasswordConfirmation.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml.cs",
@@ -2782,7 +2797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 140,
               "Title": "Lockout.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml.cs",
@@ -2794,7 +2809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 142,
               "Title": "LoginWith2fa.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
@@ -2806,7 +2821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 143,
               "Title": "LoginWithRecoveryCode.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
@@ -2818,7 +2833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 144,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
@@ -2830,7 +2845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 145,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -2842,7 +2857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 146,
               "Title": "RegisterConfirmation.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
@@ -2854,7 +2869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 141,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -2866,7 +2881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 147,
               "Title": "ResendEmailConfirmation.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
@@ -2878,7 +2893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 148,
               "Title": "ResetPassword.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
@@ -2890,7 +2905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 149,
               "Title": "ResetPasswordConfirmation.cshtml.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml.cs",
@@ -2902,7 +2917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 150,
               "Title": "RegisterConfirmation.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
@@ -2914,7 +2929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 153,
               "Title": "LoginWithRecoveryCode.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
@@ -2926,7 +2941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 154,
               "Title": "LoginWith2fa.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
@@ -2938,7 +2953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 155,
               "Title": "Lockout.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
@@ -2950,7 +2965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 156,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
@@ -2962,7 +2977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 152,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
@@ -2974,7 +2989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 151,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -2986,7 +3001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 158,
               "Title": "ExternalLogin.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
@@ -2998,7 +3013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 159,
               "Title": "ConfirmEmailChange.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
@@ -3010,7 +3025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 161,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
@@ -3022,7 +3037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 157,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
@@ -3034,7 +3049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 163,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Roles\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Roles\\Create.cshtml",
@@ -3046,7 +3061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 165,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Banks\\Create.cshtml",
@@ -3058,7 +3073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 160,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
@@ -3070,7 +3085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 164,
               "Title": "RolesViewModel.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ViewModels\\RolesViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\RolesViewModel.cs",
@@ -3082,7 +3097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 162,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Roles\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Roles\\Edit.cshtml",
@@ -3094,7 +3109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 166,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -3106,7 +3121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 167,
               "Title": "RejectLeave.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\RejectLeave.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\RejectLeave.cshtml",
@@ -3118,7 +3133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 187,
+              "DocumentIndex": 188,
               "Title": "20240204144155_ApprovalNotes.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240204144155_ApprovalNotes.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240204144155_ApprovalNotes.cs",
@@ -3130,7 +3145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 168,
               "Title": "ApprovedLeaveApplications.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\ApprovedLeaveApplications.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\ApprovedLeaveApplications.cshtml",
@@ -3142,7 +3157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 169,
               "Title": "LeaveApplication.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\LeaveApplication.cs",
               "RelativeDocumentMoniker": "Models\\LeaveApplication.cs",
@@ -3154,7 +3169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 170,
               "Title": "RejectedLeaveApplications.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\RejectedLeaveApplications.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\RejectedLeaveApplications.cshtml",
@@ -3166,7 +3181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 171,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\Details.cshtml",
@@ -3178,7 +3193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 173,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\Edit.cshtml",
@@ -3190,7 +3205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 172,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\LeaveApplications\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\LeaveApplications\\Delete.cshtml",
@@ -3202,7 +3217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 174,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -3214,7 +3229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 186,
+              "DocumentIndex": 187,
               "Title": "20240203142132_LeaveApplications.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240203142132_LeaveApplications.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240203142132_LeaveApplications.cs",
@@ -3226,7 +3241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 175,
               "Title": "20240203133253_LeaveApplications.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240203133253_LeaveApplications.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240203133253_LeaveApplications.cs",
@@ -3237,7 +3252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 177,
               "Title": "City.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\City.cs",
               "RelativeDocumentMoniker": "Models\\City.cs",
@@ -3249,7 +3264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 184,
+              "DocumentIndex": 185,
               "Title": "20240203083131_Countries.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240203083131_Countries.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240203083131_Countries.cs",
@@ -3261,7 +3276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 176,
               "Title": "SystemCode.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\SystemCode.cs",
               "RelativeDocumentMoniker": "Models\\SystemCode.cs",
@@ -3273,7 +3288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 185,
+              "DocumentIndex": 186,
               "Title": "20240203082257_SettingsDetails.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240203082257_SettingsDetails.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240203082257_SettingsDetails.cs",
@@ -3285,7 +3300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 178,
               "Title": "LeaveType.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\LeaveType.cs",
               "RelativeDocumentMoniker": "Models\\LeaveType.cs",
@@ -3297,7 +3312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 179,
               "Title": "Bank.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Bank.cs",
               "RelativeDocumentMoniker": "Models\\Bank.cs",
@@ -3309,7 +3324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 181,
+              "DocumentIndex": 182,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -3321,7 +3336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 180,
+              "DocumentIndex": 181,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -3333,7 +3348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
+              "DocumentIndex": 180,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -3345,7 +3360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 182,
+              "DocumentIndex": 183,
               "Title": "20240129164645_EmployeesDetails.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Data\\Migrations\\20240129164645_EmployeesDetails.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240129164645_EmployeesDetails.cs",
@@ -3357,7 +3372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 183,
+              "DocumentIndex": 184,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
