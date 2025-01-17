@@ -11,48 +11,50 @@
         <h3 class="card-title">Workflow User Groups Members List</h3>
     </div>
     <div class="card-body">
-        <table id="example1" class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.WorkFlowUserGroup)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Sender)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Approver)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.SequenceNo)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+        <div class="table-responsive">
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <thead>
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.WorkFlowUserGroup.Description)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Sender.FullName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Approver.FullName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.SequenceNo)
-                        </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                        </td>
+                        <th>
+                            @Html.DisplayNameFor(model => model.WorkFlowUserGroup)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Sender)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Approver)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SequenceNo)
+                        </th>
+                        <th></th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.WorkFlowUserGroup.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Sender.FullName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Approver.FullName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SequenceNo)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

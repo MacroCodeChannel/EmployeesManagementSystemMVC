@@ -7,9 +7,6 @@
     <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Department</a>
 </p>
 <div class="card">
-    <div class="card-header">
-        <h3 class="card-title">Departments List</h3>
-    </div>
     <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
             <thead>
@@ -26,14 +23,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.CreatedOn)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.ModifiedById)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.ModifiedOn)
-                    </th>
                     <th>Edit</th>
-                    <th>View</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -48,22 +38,13 @@
                             @Html.DisplayFor(modelItem => item.Name)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.CreatedById)
+                            @Html.DisplayFor(modelItem => item.CreatedBy.FullName)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.CreatedOn)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.ModifiedById)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.ModifiedOn)
-                        </td>
-                        <td>
                             <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-eye"></i> Edit</a>
-                        </td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a>
                         </td>
                         <td>
                             <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>

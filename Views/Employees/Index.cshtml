@@ -4,37 +4,36 @@
     ViewData["Title"] = "Employees List";
 }
 
-<div class="card">
-    <p>
-        <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Employee</a>
-    </p>
+<div class="card mb-3">
     <div class="card-body">
         <div class="col-md-12">
-            <form asp-action="Index" enctype="multipart/form-data" class="form-vertical">
+            <form asp-action="Index" enctype="multipart/form-data" class="form-horizontal">
                 <div class="row">
-                    <div class="form-group col-md-4">
-                        <label asp-for="EmpNo" class="control-label"></label>
+                    <div class="form-group col-md-3 mb-3">
+                        <label asp-for="EmpNo" class="form-label">Employee No</label>
                         <input asp-for="EmpNo" class="form-control" />
                     </div>
-                    <div class="form-group col-md-4">
-                        <label asp-for="FullName" class="control-label"></label>
+                    <div class="form-group col-md-3 mb-3">
+                        <label asp-for="FullName" class="form-label">Full Name</label>
                         <input asp-for="FullName" class="form-control" />
                     </div>
-                    <div class="form-group col-md-4">
-                        <label asp-for="PhoneNumber" class="control-label"></label>
+                    <div class="form-group col-md-3 mb-3">
+                        <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
                         <input asp-for="PhoneNumber" type="text" class="form-control" />
                     </div>
-                    <div class="form-group col-md-4">
-                        <label asp-for="EmailAddress" class="control-label"></label>
+                    <div class="form-group col-md-3 mb-3">
+                        <label asp-for="EmailAddress" class="form-label">Email Address</label>
                         <input asp-for="EmailAddress" type="text" class="form-control" />
                     </div>
-                    <div class="col-md-2 mt-20">
-                        <button type="submit" class="btn btn-success btn-block mt-20">
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success w-100">
                             <i class="fa fa-search"></i> Search
                         </button>
                     </div>
-                    <div class="col-md-2 mt-20">
-                        <button type="button" class="btn btn-default btn-block mt-20">
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-secondary w-100">
                             <i class="fa fa-eraser"></i> Clear
                         </button>
                     </div>
@@ -45,79 +44,73 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <h3>
-            Employees List
-        </h3>
+        <div class="mb-3 float-right">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="fa fa-plus"></i> Add New Employee
+            </a>
+        </div>
     </div>
     <div class="card-body">
-        <table id="example1" class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.EmpNo)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.FullName)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.PhoneNumber)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.EmailAddress)
-                    </th>
-
-                    <th>
-                        @Html.DisplayNameFor(model => model.LeaveOutStandingBalance)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.StatusId)
-                    </th>
-                    <th>
-                        Edit
-                    </th>
-                    <th>
-                        View
-                    </th>
-                    <th>
-                        Delete
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.Employees)
-                {
+        <div class="table-responsive">
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <thead>
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.EmpNo)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FullName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.PhoneNumber)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.EmailAddress)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LeaveOutStandingBalance)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Status.Description)
-                        </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-eye"></i> Edit</a>
-                        </td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a>
-                        </td>
-                        <td>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
-                        </td>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmpNo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FullName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PhoneNumber)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmailAddress)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.LeaveOutStandingBalance)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.StatusId)
+                        </th>
+                        <th>
+                            Actions
+                        </th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Employees)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EmpNo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FullName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PhoneNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EmailAddress)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LeaveOutStandingBalance)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Status.Description)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fa fa-eye"></i></a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 </div>

@@ -23,8 +23,11 @@ namespace EmployeesManagement.Controllers
         // GET: Cities
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Cities.Include(c => c.Country);
-            return View(await applicationDbContext.ToListAsync());
+            var city = await _context.Cities
+                .Include(c => c.Country)
+                .ToListAsync();
+
+            return View(city);
         }
 
         // GET: Cities/Details/5
@@ -82,7 +85,7 @@ namespace EmployeesManagement.Controllers
             {
                 return NotFound();
             }
-            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Id", city.CountryId);
+            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name", city.CountryId);
             return View(city);
         }
 
@@ -91,19 +94,22 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Name,CountryId")] City city)
+        public async Task<IActionResult> Edit(int id,City city)
         {
             if (id != city.Id)
             {
                 return NotFound();
             }
 
+            ModelState.Remove("Country");
+
             if (ModelState.IsValid)
             {
                 try
                 {
+                    var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     _context.Update(city);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(Userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -118,7 +124,7 @@ namespace EmployeesManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Id", city.CountryId);
+            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name", city.CountryId);
             return View(city);
         }
 

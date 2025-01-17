@@ -3,55 +3,74 @@
 @{
     ViewData["Title"] = "Delete";
 }
+<div class="row">
+    <div class="col-xl-12 mx-auto">
+        <div class="card border-top border-0 border-4 border-info">
+            <div class="card-body">
+                <div class="border p-4 rounded">
+                    <div class="card-title d-flex align-items-center">
+                        <div>
+                            <i class="bx bxs-user me-1 font-22 text-info"></i>
+                        </div>
+                        <h5 class="mb-0 text-info">Are you sure you want to delete this?</h5>
+                    </div>
+                    <hr />
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <table class="table table-striped table-bordered" style="width:100%">
+                                <tr>
+                                    <th class="col-sm-4">
+                                        @Html.DisplayNameFor(model => model.Code)
+                                    </th>
+                                    <td class="col-sm-4">
+                                        @Html.DisplayFor(model => model.Code)
+                                    </td>
+                                    <th class="col-sm-4">
+                                        @Html.DisplayNameFor(model => model.Name)
+                                    </th>
+                                    <td class="col-sm-4">
+                                        @Html.DisplayFor(model => model.Name)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col-sm-4">
+                                        @Html.DisplayNameFor(model => model.CreatedById)
+                                    </th>
+                                    <td class="col-sm-4">
+                                        @Html.DisplayFor(model => model.CreatedBy.FullName)
+                                    </td>
+                                    <th class="col-sm-4">
+                                        @Html.DisplayNameFor(model => model.CreatedOn)
+                                    </th>
+                                    <td class="col-sm-4">
+                                        @Html.DisplayFor(model => model.CreatedOn)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col-sm-4">
+                                        @Html.DisplayNameFor(model => model.ModifiedById)
+                                    </th>
+                                    <td class="col-sm-4">
+                                        @Html.DisplayFor(model => model.ModifiedBy.FullName)
+                                    </td>
+                                    <th class="col-sm-4">
+                                        @Html.DisplayNameFor(model => model.ModifiedOn)
+                                    </th>
+                                    <td class="col-sm-4">
+                                        @Html.DisplayFor(model => model.ModifiedOn)
+                                    </td>
+                                </tr>
+                            </table>
 
-<h1>Delete</h1>
-
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Department</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Code)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Code)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedById)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedById)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedOn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedOn)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ModifiedById)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ModifiedById)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ModifiedOn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ModifiedOn)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+                            <form asp-action="Delete">
+                                <input type="hidden" asp-for="Id" />
+                                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                                <a asp-action="Index">Back to List</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

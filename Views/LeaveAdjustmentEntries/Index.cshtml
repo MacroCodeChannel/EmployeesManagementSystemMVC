@@ -9,59 +9,60 @@
         <h3 class="card-title">Employees Leave Adjustments</h3>
     </div>
     <div class="card-body">
-        <table id="example1" class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.LeavePeriod)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Employee)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.NoOfDays)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.LeaveAdjustmentDate)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.AdjustmentDescription)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.AdjustmentType)
-                    </th>
-                    <th>View</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+        <div class="table-responsive">
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <thead>
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LeavePeriod)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Employee.FullName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.NoOfDays)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LeaveAdjustmentDate)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.AdjustmentDescription)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.AdjustmentType.Description)
-                        </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success"><i class="fa fa-eye"></i> View</a>
-                        </td>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LeavePeriod)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Employee)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NoOfDays)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LeaveAdjustmentDate)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.AdjustmentDescription)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.AdjustmentType)
+                        </th>
+                        <th>View</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LeavePeriod)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Employee.FullName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NoOfDays)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LeaveAdjustmentDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AdjustmentDescription)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AdjustmentType.Description)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success"><i class="fa fa-eye"></i> View</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
-

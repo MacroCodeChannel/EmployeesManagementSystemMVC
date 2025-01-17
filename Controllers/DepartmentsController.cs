@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EmployeesManagement.Data;
 using EmployeesManagement.Models;
+using System.Security.Claims;
 
 namespace EmployeesManagement.Controllers
 {
@@ -22,7 +23,11 @@ namespace EmployeesManagement.Controllers
         // GET: Departments
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Departments.ToListAsync());
+            var departments = await _context.Departments
+                .Include(x=>x.CreatedBy)
+                .Include(x => x.ModifiedBy)
+                .ToListAsync();
+            return View(departments);
         }
 
         // GET: Departments/Details/5
@@ -54,12 +59,17 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Department department)
+        public async Task<IActionResult> Create(Department department)
         {
+            var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            department.CreatedById = userid;
+            department.CreatedOn = DateTime.Now;
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
                 _context.Add(department);
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(userid);
                 return RedirectToAction(nameof(Index));
             }
             return View(department);
@@ -86,19 +96,24 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Department department)
+        public async Task<IActionResult> Edit(int id, Department department)
         {
             if (id != department.Id)
             {
                 return NotFound();
             }
 
+            var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            department.ModifiedById = userid;
+            department.ModifiedOn = DateTime.Now;
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
                 try
                 {
                     _context.Update(department);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -125,6 +140,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var department = await _context.Departments
+                .Include(x=>x.CreatedBy)
+                .Include(x => x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (department == null)
             {
@@ -145,7 +162,8 @@ namespace EmployeesManagement.Controllers
                 _context.Departments.Remove(department);
             }
 
-            await _context.SaveChangesAsync();
+            var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            await _context.SaveChangesAsync(userid);
             return RedirectToAction(nameof(Index));
         }
 

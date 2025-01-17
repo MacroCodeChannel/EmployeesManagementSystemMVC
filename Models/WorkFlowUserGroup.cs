@@ -7,13 +7,18 @@ namespace EmployeesManagement.Models
         // Leave Applications//Imprest Application/Salary Advance Request
         public int Id { get; set; }
 
+        [DisplayName("Code")]
         public string Code { get; set; }
 
+
+        [DisplayName("Description")]
         public string Description { get; set; }
 
+        [DisplayName("Department Name")]
         public int? DepartmentId { get;set; }
         public Department Department { get; set; }
 
+        [DisplayName("Document Type")]
         public int? DocumentTypeId { get; set; }
         public SystemCodeDetail DocumentType { get; set; }
 
@@ -32,6 +37,8 @@ namespace EmployeesManagement.Models
         [DisplayName("Document Approver")]
         public string ApproverId { get; set; }
         public ApplicationUser Approver { get; set; }
+
+        [DisplayName("Sequence No")]
         public int SequenceNo { get; set; }
 
     }

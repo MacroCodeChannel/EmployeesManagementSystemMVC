@@ -23,7 +23,11 @@ namespace EmployeesManagement.Controllers
         // GET: Banks
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Banks.ToListAsync());
+            var banks = await _context.Banks
+                .Include(x => x.CreatedBy)
+                .Include(x => x.ModifiedBy)
+                .ToListAsync();
+            return View(banks);
         }
 
         // GET: Banks/Details/5
@@ -55,11 +59,15 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Code,Name,AccountNo,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Bank bank)
+        public async Task<IActionResult> Create( Bank bank)
         {
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
                 var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                bank.CreatedById = Userid;
+                bank.CreatedOn = DateTime.Now;
                 _context.Add(bank);
                 await _context.SaveChangesAsync(Userid);
                 return RedirectToAction(nameof(Index));
@@ -75,7 +83,10 @@ namespace EmployeesManagement.Controllers
                 return NotFound();
             }
 
-            var bank = await _context.Banks.FindAsync(id);
+            var bank = await _context.Banks
+                .Include(x => x.CreatedBy)
+                .Include(x => x.ModifiedBy)
+                .FirstOrDefaultAsync(x => x.Id == id);
             if (bank == null)
             {
                 return NotFound();
@@ -95,24 +106,27 @@ namespace EmployeesManagement.Controllers
                 return NotFound();
             }
 
-                try
+            try
+            {
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                bank.ModifiedById = Userid;
+                bank.ModifiedOn = DateTime.Now;
+                _context.Update(bank);
+                await _context.SaveChangesAsync(Userid);
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!BankExists(bank.Id))
                 {
-                    _context.Update(bank);
-                    await _context.SaveChangesAsync();
+                    return NotFound();
                 }
-                catch (DbUpdateConcurrencyException)
+                else
                 {
-                    if (!BankExists(bank.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    throw;
                 }
-                return RedirectToAction(nameof(Index));
-            
+            }
+            return RedirectToAction(nameof(Index));
+
             return View(bank);
         }
 
@@ -125,6 +139,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var bank = await _context.Banks
+                .Include(x => x.CreatedBy)
+                .Include(x => x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (bank == null)
             {

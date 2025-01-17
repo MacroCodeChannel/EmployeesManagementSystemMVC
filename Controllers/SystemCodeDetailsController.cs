@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using EmployeesManagement.Data;
 using EmployeesManagement.Models;
 using System.Security.Claims;
+using EmployeesManagement.ViewModels;
 
 namespace EmployeesManagement.Controllers
 {
@@ -21,14 +22,14 @@ namespace EmployeesManagement.Controllers
         }
 
         // GET: SystemCodeDetails
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(SystemCodeDetailViewModel vm)
         {
-            var systcodes  = await _context.SystemCodeDetails
+           vm.SystemCodeDetails  = await _context.SystemCodeDetails
                 .Include(s => s.SystemCode)
                 .Include(s=>s.CreatedBy)
                 .ToListAsync();
 
-            return View(systcodes);
+            return View(vm);
         }
 
         // GET: SystemCodeDetails/Details/5
@@ -69,7 +70,7 @@ namespace EmployeesManagement.Controllers
             systemCodeDetail.CreatedOn = DateTime.Now;
             systemCodeDetail.CreatedById = Userid;
 
-            _context.Add(systemCodeDetail);
+                 _context.Add(systemCodeDetail);
                 await _context.SaveChangesAsync(Userid);
                 return RedirectToAction(nameof(Index));
             ViewData["SystemCodeId"] = new SelectList(_context.SystemCodes, "Id", "Description", systemCodeDetail.SystemCodeId);
@@ -89,28 +90,34 @@ namespace EmployeesManagement.Controllers
             {
                 return NotFound();
             }
-            ViewData["SystemCodeId"] = new SelectList(_context.SystemCodes, "Id", "Id", systemCodeDetail.SystemCodeId);
+
+            ViewData["SystemCodeId"] = new SelectList(_context.SystemCodes, "Id", "Description", systemCodeDetail.SystemCodeId);
+            
             return View(systemCodeDetail);
         }
 
         // POST: SystemCodeDetails/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,SystemCodeId,Code,Description,OrderNo,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] SystemCodeDetail systemCodeDetail)
+        public async Task<IActionResult> Edit(int id,SystemCodeDetail systemCodeDetail)
         {
             if (id != systemCodeDetail.Id)
             {
                 return NotFound();
             }
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            systemCodeDetail.ModifiedById = Userid;
+            systemCodeDetail.ModifiedOn = DateTime.Now;
 
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
+            ModelState.Remove("SystemCode");
             if (ModelState.IsValid)
             {
                 try
                 {
                     _context.Update(systemCodeDetail);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(Userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -125,7 +132,7 @@ namespace EmployeesManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SystemCodeId"] = new SelectList(_context.SystemCodes, "Id", "Id", systemCodeDetail.SystemCodeId);
+            ViewData["SystemCodeId"] = new SelectList(_context.SystemCodes, "Id", "Description", systemCodeDetail.SystemCodeId);
             return View(systemCodeDetail);
         }
 
@@ -153,13 +160,15 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var systemCodeDetail = await _context.SystemCodeDetails.FindAsync(id);
             if (systemCodeDetail != null)
             {
                 _context.SystemCodeDetails.Remove(systemCodeDetail);
             }
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(Userid);
             return RedirectToAction(nameof(Index));
         }
 

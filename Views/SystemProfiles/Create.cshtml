@@ -3,56 +3,60 @@
 @{
     ViewData["Title"] = "System Profile";
 }
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title">Add New System Profile</h3>
-    </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-12">
-                <form asp-action="Create">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="Name" class="control-label"></label>
-                            <input asp-for="Name" class="form-control" />
-                            <span asp-validation-for="Name" class="text-danger"></span>
+<div class="row">
+    <div class="col-xl-12 mx-auto">
+        <div class="card border-top border-0 border-4 border-info">
+            <div class="card-body">
+                <div class="border p-4 rounded">
+                    <div class="card-title d-flex align-items-center">
+                        <div>
+                            <i class="bx bxs-user me-1 font-22 text-info"></i>
                         </div>
+                        <h5 class="mb-0 text-info">Add New User </h5>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="ProfileId" class="control-label"></label>
-                            <select asp-for="ProfileId" class="form-control" asp-items="ViewBag.ProfileId">
-                                <option value="">Select System Profile</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="Order" class="control-label"></label>
-                            <input asp-for="Order" class="form-control" />
-                            <span asp-validation-for="Order" class="text-danger"></span>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="form-group">
+                    <hr />
+                    <div class="row g-3">
                         <div class="col-md-12">
-                            <div class="card-footer">
-                                <div class="clearfix">
-                                    <a asp-action="Index" class="btn btn-danger push-left">Back to List</a>
-                                    <input type="submit" value="Save System Profile" class="btn btn-primary" />
+                            <form asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="Name" class="control-label"></label>
+                                            <input asp-for="Name" class="form-control" />
+                                            <span asp-validation-for="Name" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="ProfileId" class="control-label"></label>
+                                            <select asp-for="ProfileId" class="form-control" asp-items="ViewBag.ProfileId">
+                                                <option value="">Select System Profile</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="Order" class="control-label"></label>
+                                            <input asp-for="Order" class="form-control" />
+                                            <span asp-validation-for="Order" class="text-danger"></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <a asp-action="Index" class="btn btn-danger push-left">Back to List</a>
+                                        <input type="submit" value="Save System Profile" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

@@ -17,7 +17,7 @@ namespace EmployeesManagement.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "9.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -259,9 +259,11 @@ namespace EmployeesManagement.Data.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("AuditLogs");
                 });
@@ -1352,6 +1354,17 @@ namespace EmployeesManagement.Data.Migrations
                     b.Navigation("User");
 
                     b.Navigation("WorkflowUserGroup");
+                });
+
+            modelBuilder.Entity("EmployeesManagement.Models.Audit", b =>
+                {
+                    b.HasOne("EmployeesManagement.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EmployeesManagement.Models.Bank", b =>

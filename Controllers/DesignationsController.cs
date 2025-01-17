@@ -11,19 +11,18 @@ using System.Security.Claims;
 
 namespace EmployeesManagement.Controllers
 {
-    public class DesignationsController : Controller
+    public class DesignationsController(ApplicationDbContext context) : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public DesignationsController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        private readonly ApplicationDbContext _context = context;
 
         // GET: Designations
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Designations.ToListAsync());
+            var designation = await _context.Designations
+                .Include(x=>x.CreatedBy)
+                .Include(x => x.ModifiedBy)
+                .ToListAsync();
+            return View(designation);
         }
 
         // GET: Designations/Details/5
@@ -35,6 +34,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var designation = await _context.Designations
+                .Include(x=>x.CreatedBy)
+                .Include(x => x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (designation == null)
             {
@@ -55,13 +56,18 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Designation designation)
+        public async Task<IActionResult> Create(Designation designation)
         {
+
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
-                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                designation.CreatedById = userid;
+                designation.CreatedOn = DateTime.Now;
                 _context.Add(designation);
-                await _context.SaveChangesAsync(Userid);
+                await _context.SaveChangesAsync(userid);
                 return RedirectToAction(nameof(Index));
             }
             return View(designation);
@@ -88,19 +94,26 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Designation designation)
+        public async Task<IActionResult> Edit(int id, Designation designation)
         {
             if (id != designation.Id)
             {
                 return NotFound();
             }
 
+
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
                 try
                 {
+
+                    var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    designation.ModifiedById = userid;
+                    designation.ModifiedOn = DateTime.Now;
                     _context.Update(designation);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {

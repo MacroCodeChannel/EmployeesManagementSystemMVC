@@ -1,0 +1,2 @@
+D:\Content Creation\.NET Core Projects\EmployeesManagement\wwwroot\assets\images\favicon-32x32.png
+D:\Content Creation\.NET Core Projects\EmployeesManagement\wwwroot\assets\images\login-images\01.jpeg

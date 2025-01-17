@@ -23,7 +23,12 @@ namespace EmployeesManagement.Controllers
         // GET: Countries
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Countries.ToListAsync());
+            var country = await _context.Countries
+                .Include(x=>x.CreatedBy)
+                .Include(x=>x.ModifiedBy)
+                .ToListAsync();
+
+            return View(country);
         }
 
         // GET: Countries/Details/5
@@ -35,6 +40,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var country = await _context.Countries
+                .Include(x=>x.CreatedBy)
+                .Include(x=>x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (country == null)
             {
@@ -55,11 +62,16 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Country country)
+        public async Task<IActionResult> Create(Country country)
         {
+
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            country.CreatedById = Userid;
+            country.CreatedOn = DateTime.Now;
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
-                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 _context.Add(country);
                 await _context.SaveChangesAsync(Userid);
                 return RedirectToAction(nameof(Index));
@@ -75,7 +87,11 @@ namespace EmployeesManagement.Controllers
                 return NotFound();
             }
 
-            var country = await _context.Countries.FindAsync(id);
+            var country = await _context.Countries
+                .Include(x=>x.CreatedBy)
+                .Include(x => x.ModifiedBy)
+                .Where(x=>x.Id==id)
+                .FirstOrDefaultAsync();
             if (country == null)
             {
                 return NotFound();
@@ -88,19 +104,25 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Country country)
+        public async Task<IActionResult> Edit(int id, Country country)
         {
             if (id != country.Id)
             {
                 return NotFound();
             }
 
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
                 try
                 {
+                 
+                    var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    country.ModifiedById = Userid;
+                    country.ModifiedOn = DateTime.Now;
                     _context.Update(country);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(Userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -127,6 +149,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var country = await _context.Countries
+                .Include(x => x.CreatedBy)
+                .Include(x => x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (country == null)
             {

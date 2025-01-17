@@ -104,19 +104,25 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Description,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] SystemCode systemCode)
+        public async Task<IActionResult> Edit(int id, SystemCode systemCode)
         {
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             if (id != systemCode.Id)
             {
                 return NotFound();
             }
 
+            ModelState.Remove("CreatedBy");
+            ModelState.Remove("ModifiedBy");
             if (ModelState.IsValid)
             {
                 try
                 {
+                    systemCode.ModifiedById = Userid;
+                    systemCode.ModifiedOn = DateTime.Now;
                     _context.Update(systemCode);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(Userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -157,13 +163,15 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var systemCode = await _context.SystemCodes.FindAsync(id);
             if (systemCode != null)
             {
                 _context.SystemCodes.Remove(systemCode);
             }
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(Userid);
             return RedirectToAction(nameof(Index));
         }
 

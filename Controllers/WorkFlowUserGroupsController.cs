@@ -91,6 +91,10 @@ namespace EmployeesManagement.Controllers
             {
                 return NotFound();
             }
+
+            ViewData["DocumentTypeId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(y => y.SystemCode.Code == "DocumentTypes"), "Id", "Description", workFlowUserGroup.DocumentTypeId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", workFlowUserGroup.DepartmentId);
+
             return View(workFlowUserGroup);
         }
 
@@ -99,13 +103,15 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Description")] WorkFlowUserGroup workFlowUserGroup)
+        public async Task<IActionResult> Edit(int id,WorkFlowUserGroup workFlowUserGroup)
         {
             if (id != workFlowUserGroup.Id)
             {
                 return NotFound();
             }
 
+            ModelState.Remove("Department");
+            ModelState.Remove("DocumentType");
             if (ModelState.IsValid)
             {
                 try
@@ -125,6 +131,8 @@ namespace EmployeesManagement.Controllers
                         throw;
                     }
                 }
+                ViewData["DocumentTypeId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(y => y.SystemCode.Code == "DocumentTypes"), "Id", "Description", workFlowUserGroup.DocumentTypeId);
+                ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", workFlowUserGroup.DepartmentId);
                 return RedirectToAction(nameof(Index));
             }
             return View(workFlowUserGroup);
@@ -159,7 +167,8 @@ namespace EmployeesManagement.Controllers
                 _context.WorkFlowUserGroups.Remove(workFlowUserGroup);
             }
 
-            await _context.SaveChangesAsync();
+            var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            await _context.SaveChangesAsync(userid);
             return RedirectToAction(nameof(Index));
         }
 
