@@ -123,7 +123,7 @@ namespace EmployeesManagement.Controllers
             try
                 {
                     _context.Update(holiday);
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync(Userid);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -149,6 +149,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var holiday = await _context.Holidays
+                .Include(x=>x.CreatedBy)
+                .Include(x=>x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (holiday == null)
             {

@@ -1,0 +1,334 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\holidays\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\holidays\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\holidayscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\holidayscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\systemcodedetails\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\systemcodedetails\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\holidays\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\holidays\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\systemcodedetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\systemcodedetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\banks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\banks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\designations\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\designations\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\departments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\departments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\holidays\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\holidays\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\holidays\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\holidays\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\viewmodels\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:viewmodels\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\employees\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\employees\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|d:\\content creation\\.net core projects\\employeesmanagement\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{055166C2-33C9-4725-8ABD-A590A5DAF632}|EmployeesManagement.csproj|solutionrelative:views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Holidays\\Delete.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Holidays\\Delete.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwE4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:03:39.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemCodeDetails\\Delete.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Delete.cshtml",
+              "RelativeToolTip": "Views\\SystemCodeDetails\\Delete.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:03:27.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Holidays\\Index.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Index.cshtml",
+              "RelativeToolTip": "Views\\Holidays\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:02:17.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemCodeDetails\\Index.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\SystemCodeDetails\\Index.cshtml",
+              "RelativeToolTip": "Views\\SystemCodeDetails\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEAAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:01:58.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Banks\\Details.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Banks\\Details.cshtml",
+              "RelativeToolTip": "Views\\Banks\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:00:47.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Designations\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Designations\\Details.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Designations\\Details.cshtml",
+              "RelativeToolTip": "Views\\Designations\\Details.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:00:41.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Details.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Details.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T04:00:29.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HolidaysController.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\HolidaysController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HolidaysController.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\HolidaysController.cs",
+              "RelativeToolTip": "Controllers\\HolidaysController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAAJgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T03:56:28.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Holidays\\Edit.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Holidays\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T03:54:49.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Holidays\\Create.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Holidays\\Create.cshtml",
+              "RelativeToolTip": "Views\\Holidays\\Create.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T03:54:38.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Create.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Create.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T03:54:25.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAswGwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:14:31.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAANAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:07:55.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employees\\Edit.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Employees\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:05:58.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Edit.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Departments\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:05:47.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ViewModels\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EmployeeViewModel.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\ViewModels\\EmployeeViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EmployeeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:03:09.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employees\\Index.cshtml",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "Views\\Employees\\Index.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGoAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:03:01.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T13:57:54.209Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

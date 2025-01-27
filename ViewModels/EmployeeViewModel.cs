@@ -54,11 +54,16 @@ namespace EmployeesManagement.ViewModels
         [DisplayName("Employment Date")]
         public DateTime? EmploymentDate { get; set; }
 
+
+        [DisplayName("Status")]
         public int? StatusId { get; set; }
 
+        [DisplayName("Inactive Date")]
         public DateTime? InactiveDate { get; set; }
         public int? CauseofInactivityId { get; set; }
 
+
+        [DisplayName("Termiantion Date")]
         public DateTime? TerminationDate { get; set; }
         public int? ReasonforterminationId { get; set; }
        
@@ -113,6 +118,7 @@ namespace EmployeesManagement.ViewModels
         [DisplayName("Disability Type")]
         public int? DisabilityId { get; set; }
 
+        [DisplayName("Disability Certificate")]
         public string? DisabilityCertificate { get; set; }
 
         public Employee Employee { get; set; }

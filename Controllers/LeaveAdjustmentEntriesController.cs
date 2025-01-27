@@ -59,7 +59,7 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,LeavePeriod,EmployeeId,NoOfDays,LeaveAdjustmentDate,LeaveStartDate,LeaveEndDate,AdjustmentDescription,AdjustmentTypeId")] LeaveAdjustmentEntry leaveAdjustmentEntry)
+        public async Task<IActionResult> Create(LeaveAdjustmentEntry leaveAdjustmentEntry)
         {
             if (ModelState.IsValid)
             {
@@ -67,8 +67,9 @@ namespace EmployeesManagement.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Id", leaveAdjustmentEntry.AdjustmentTypeId);
-            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "Id", leaveAdjustmentEntry.EmployeeId);
+
+            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Description", leaveAdjustmentEntry.AdjustmentTypeId);
+            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveAdjustmentEntry.EmployeeId);
             return View(leaveAdjustmentEntry);
         }
 
@@ -85,8 +86,9 @@ namespace EmployeesManagement.Controllers
             {
                 return NotFound();
             }
-            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Id", leaveAdjustmentEntry.AdjustmentTypeId);
-            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "Id", leaveAdjustmentEntry.EmployeeId);
+
+            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Description", leaveAdjustmentEntry.AdjustmentTypeId);
+            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveAdjustmentEntry.EmployeeId);
             return View(leaveAdjustmentEntry);
         }
 
@@ -95,7 +97,7 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,LeavePeriod,EmployeeId,NoOfDays,LeaveAdjustmentDate,LeaveStartDate,LeaveEndDate,AdjustmentDescription,AdjustmentTypeId")] LeaveAdjustmentEntry leaveAdjustmentEntry)
+        public async Task<IActionResult> Edit(int id, LeaveAdjustmentEntry leaveAdjustmentEntry)
         {
             if (id != leaveAdjustmentEntry.Id)
             {
@@ -122,8 +124,11 @@ namespace EmployeesManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Id", leaveAdjustmentEntry.AdjustmentTypeId);
-            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "Id", leaveAdjustmentEntry.EmployeeId);
+
+
+
+            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Description", leaveAdjustmentEntry.AdjustmentTypeId);
+            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveAdjustmentEntry.EmployeeId);
             return View(leaveAdjustmentEntry);
         }
 
