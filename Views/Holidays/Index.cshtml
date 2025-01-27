@@ -95,9 +95,18 @@
                                 @Html.DisplayFor(modelItem => item.CreatedOn)
                             </td>
                             <td>
-                                <div class="d-flex order-actions">
-                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm"><i class='bx bxs-edit'></i></a>
-                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class='bx bxs-trash'></i></a>
+                                <div class="ms-auto">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Actions</button>
+                                        <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-edit"> Edit</i> </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="dropdown-item"><i class='bx bxs-trash'> Delete</i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                         </tr>

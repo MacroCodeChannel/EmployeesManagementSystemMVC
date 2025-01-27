@@ -26,9 +26,6 @@
                             @Html.DisplayNameFor(model => model.LeaveOutStandingBalance)
                         </th>
                         <th>
-                            View
-                        </th>
-                        <th>
                             Action
                         </th>
                     </tr>
@@ -50,10 +47,19 @@
                                 @Html.DisplayFor(modelItem => item.LeaveOutStandingBalance)
                             </td>
                             <td>
-                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a>
-                            </td>
-                            <td>
-                                <a asp-action="AdjustLeaveBalance" asp-route-id="@item.Id" class="btn btn-success"><i class="fa fa-lock"></i> Adjust</a>
+                                <div class="ms-auto">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Actions</button>
+                                        <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
+                                            <a asp-action="AdjustLeaveBalance" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-lock-alt"> Adjust</i> </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="Details" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-bullseye"> View</i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     }

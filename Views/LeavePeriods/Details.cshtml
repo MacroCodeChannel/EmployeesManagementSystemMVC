@@ -4,75 +4,86 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>LeavePeriod</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StartDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StartDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EndDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EndDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Closed)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Closed)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Locked)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Locked)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedById)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedById)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedOn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedOn)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ModifiedById)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ModifiedById)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ModifiedOn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ModifiedOn)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<h1>Leave Period Details</h1>
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.Name)
+                    </td>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.Description)
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.StartDate)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.StartDate)
+                    </td>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.EndDate)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.EndDate)
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Closed)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.Closed)
+                    </td>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Locked)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.Locked)
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.CreatedById)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.CreatedById)
+                    </td>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.CreatedOn)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.CreatedOn)
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.ModifiedById)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.ModifiedById)
+                    </td>
+                    <th class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.ModifiedOn)
+                    </th>
+                    <td class="col-sm-4">
+                        @Html.DisplayFor(model => model.ModifiedOn)
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
 </div>

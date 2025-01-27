@@ -35,9 +35,6 @@
                             @Html.DisplayNameFor(model => model.LeaveType)
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Attachment)
-                        </th>
-                        <th>
                             @Html.DisplayNameFor(model => model.Status)
                         </th>
                         <th>Actions</th>
@@ -66,33 +63,28 @@
                                 @Html.DisplayFor(modelItem => item.LeaveType.Name)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Attachment)
-                            </td>
-                            <td style="background-color:green">
-                                @Html.DisplayFor(modelItem => item.Status.Description)
+                                <span class="badge rounded-pill bg-success">
+                                    @Html.DisplayFor(modelItem => item.Status.Description)
+                                </span>
                             </td>
                             <td>
-                                <div class="input-group input-group-lg">
-                                    <div class="input-group-prepend">
-                                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                                            Action
+                                <div class="ms-auto">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Actions</button>
+                                        <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
                                         </button>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown-item">
-                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>
-                                            </li>
-                                            <li class="dropdown-divider"></li>
-                                            <li class="dropdown-item"> <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a></li>
-                                            <li class="dropdown-divider"></li>
-                                            <li class="dropdown-item"><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a></li>
-                                            <li class="dropdown-divider"></li>
-                                            <li class="dropdown-item"><a asp-action="ApproveLeave" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-check"></i> Approve</a></li>
-                                            <li class="dropdown-divider"></li>
-                                            <li class="dropdown-item"><a asp-action="RejectLeave" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-check"></i> Reject</a></li>
-                                        </ul>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-edit"></i> Edit</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="Details" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-bullseye"></i> View</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="ApproveLeave" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-check-circle"></i> Approve</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="RejectLeave" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-check-shield"></i> Reject</a>
+                                        </div>
                                     </div>
                                 </div>
-
                             </td>
                         </tr>
                     }

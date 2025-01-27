@@ -24,15 +24,8 @@
                         <th>
                             @Html.DisplayNameFor(model => model.EndDate)
                         </th>
-
                         <th>
-                            Edit
-                        </th>
-                        <th>
-                            View
-                        </th>
-                        <th>
-                            Delete
+                            Actions
                         </th>
                     </tr>
                 </thead>
@@ -53,13 +46,21 @@
                                 @Html.DisplayFor(modelItem => item.EndDate)
                             </td>
                             <td>
-                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>
-                            </td>
-                            <td>
-                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-eye"></i> View</a>
-                            </td>
-                            <td>
-                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                <div class="ms-auto">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Actions</button>
+                                        <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-edit"> Edit</i> </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="Details" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-bullseye"> View</i></a>
+                                            <div class="dropdown-divider"></div>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="dropdown-item"><i class='bx bxs-trash'> Delete</i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     }
