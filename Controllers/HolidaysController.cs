@@ -80,14 +80,27 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Holiday holiday)
         {
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            holiday.CreatedById = Userid;
-            holiday.CreatedOn = DateTime.Now;
+            try
+            {
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                holiday.CreatedById = Userid;
+                holiday.CreatedOn = DateTime.Now;
+                _context.Add(holiday);
+                await _context.SaveChangesAsync(Userid);
 
-            _context.Add(holiday);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
-            return View(holiday);
+                TempData["Message"] = "Holiday created successfully";
+
+                return RedirectToAction(nameof(Index));
+
+              
+
+            }
+            catch(Exception ex)
+            {
+                TempData["Error"] = "An error occurred while creating the holiday"+ ex.Message;
+                return View(holiday);
+            }
+
         }
 
         // GET: Holidays/Edit/5

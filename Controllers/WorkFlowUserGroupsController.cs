@@ -65,17 +65,28 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create( WorkFlowUserGroup workFlowUserGroup)
         {
-            
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            _context.Add(workFlowUserGroup);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
 
+            try
+            {
+
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                _context.Add(workFlowUserGroup);
+                await _context.SaveChangesAsync(Userid);
+
+                TempData["Message"] = "WorkFlowUserGroup created successfully";
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "An error occurred while creating WorkFlowUserGroup" +ex.Message;
+                ModelState.AddModelError("", ex.Message);
+                return View(workFlowUserGroup);
+            }
 
             ViewData["DocumentTypeId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(y => y.SystemCode.Code == "DocumentTypes"), "Id", "Description", workFlowUserGroup.DocumentTypeId);
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name",workFlowUserGroup.DepartmentId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", workFlowUserGroup.DepartmentId);
 
-            return View(workFlowUserGroup);
         }
 
         // GET: WorkFlowUserGroups/Edit/5

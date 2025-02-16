@@ -19,7 +19,7 @@ namespace EmployeesManagement.Controllers
         public async Task<IActionResult> Index()
         {
             var designation = await _context.Designations
-                .Include(x=>x.CreatedBy)
+                .Include(x => x.CreatedBy)
                 .Include(x => x.ModifiedBy)
                 .ToListAsync();
             return View(designation);
@@ -34,7 +34,7 @@ namespace EmployeesManagement.Controllers
             }
 
             var designation = await _context.Designations
-                .Include(x=>x.CreatedBy)
+                .Include(x => x.CreatedBy)
                 .Include(x => x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (designation == null)
@@ -58,17 +58,26 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Designation designation)
         {
-
-            ModelState.Remove("CreatedBy");
-            ModelState.Remove("ModifiedBy");
-            if (ModelState.IsValid)
+            try
             {
-                var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                designation.CreatedById = userid;
-                designation.CreatedOn = DateTime.Now;
-                _context.Add(designation);
-                await _context.SaveChangesAsync(userid);
-                return RedirectToAction(nameof(Index));
+
+                ModelState.Remove("CreatedBy");
+                ModelState.Remove("ModifiedBy");
+                if (ModelState.IsValid)
+                {
+                    var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    designation.CreatedById = userid;
+                    designation.CreatedOn = DateTime.Now;
+                    _context.Add(designation);
+                    await _context.SaveChangesAsync(userid);
+                    TempData["Message"] = "Designation saved successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error saving Designation" + ex.Message;
+                return View(designation);
             }
             return View(designation);
         }

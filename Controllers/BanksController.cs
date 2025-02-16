@@ -61,16 +61,25 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create( Bank bank)
         {
-            ModelState.Remove("CreatedBy");
-            ModelState.Remove("ModifiedBy");
-            if (ModelState.IsValid)
+            try
             {
-                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                bank.CreatedById = Userid;
-                bank.CreatedOn = DateTime.Now;
-                _context.Add(bank);
-                await _context.SaveChangesAsync(Userid);
-                return RedirectToAction(nameof(Index));
+
+                ModelState.Remove("CreatedBy");
+                ModelState.Remove("ModifiedBy");
+                if (ModelState.IsValid)
+                {
+                    var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    bank.CreatedById = Userid;
+                    bank.CreatedOn = DateTime.Now;
+                    _context.Add(bank);
+                    await _context.SaveChangesAsync(Userid);
+                    TempData["Message"] = "Bank created successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+            }catch(Exception ex)
+            {
+                TempData["Error"] = "Error creating Bank" + ex.Message;
+                return View(bank);
             }
             return View(bank);
         }

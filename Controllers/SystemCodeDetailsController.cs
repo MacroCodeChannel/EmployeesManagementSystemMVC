@@ -65,16 +65,26 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(SystemCodeDetail systemCodeDetail)
         {
+            try
+            {
 
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            systemCodeDetail.CreatedOn = DateTime.Now;
-            systemCodeDetail.CreatedById = Userid;
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                systemCodeDetail.CreatedOn = DateTime.Now;
+                systemCodeDetail.CreatedById = Userid;
 
-                 _context.Add(systemCodeDetail);
+                _context.Add(systemCodeDetail);
                 await _context.SaveChangesAsync(Userid);
+
+                TempData["Message"] = "System Code Detail created successfully";
+
                 return RedirectToAction(nameof(Index));
+            }catch(Exception ex)
+            {
+                TempData["Error"] = "Error creating System Code Detail" +ex.Message;
+                return View(systemCodeDetail);
+            }
             ViewData["SystemCodeId"] = new SelectList(_context.SystemCodes, "Id", "Description", systemCodeDetail.SystemCodeId);
-            return View(systemCodeDetail);
+  
         }
 
         // GET: SystemCodeDetails/Edit/5

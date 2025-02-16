@@ -35,15 +35,24 @@ namespace EmployeesManagement.Controllers
         }
         public async Task<ActionResult> AssignRights(ProfileViewModel vm)
         {
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var role = new RoleProfile
+            try
             {
-                TaskId = vm.TaskId,
-                RoleId = vm.RoleId,
-            };
-            _context.RoleProfiles.Add(role);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction("Index");
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var role = new RoleProfile
+                {
+                    TaskId = vm.TaskId,
+                    RoleId = vm.RoleId,
+                };
+                _context.RoleProfiles.Add(role);
+                await _context.SaveChangesAsync(Userid);
+                TempData["Success"] = "Role Assigned Successfully";
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error Assigning Role" + ex.Message;
+                return View(vm);
+            }
         }
 
 

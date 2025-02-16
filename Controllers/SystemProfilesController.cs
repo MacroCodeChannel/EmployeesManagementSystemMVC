@@ -60,15 +60,25 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(SystemProfile systemProfile)
         {
-               var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                 systemProfile.CreatedById = Userid;
+            try
+            {
+
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                systemProfile.CreatedById = Userid;
                 systemProfile.CreatedOn = DateTime.Now;
                 _context.Add(systemProfile);
                 await _context.SaveChangesAsync(Userid);
+                TempData["Message"] = "System Profile created successfully";
                 return RedirectToAction(nameof(Index));
-            
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error creating System Profile";
+                return View(systemProfile);
+            }
+
             ViewData["ProfileId"] = new SelectList(_context.SystemProfiles, "Id", "Name", systemProfile.ProfileId);
-            return View(systemProfile);
+       
         }
 
         // GET: SystemProfiles/Edit/5

@@ -58,20 +58,30 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Code,Name,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] LeaveType leaveType)
+        public async Task<IActionResult> Create(LeaveType leaveType)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                leaveType.CreatedById = Userid;
-                leaveType.CreatedOn = DateTime.Now;
-                _context.Add(leaveType);
-                await _context.SaveChangesAsync(Userid);
-                return RedirectToAction(nameof(Index));
+
+                if (ModelState.IsValid)
+                {
+                    var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    leaveType.CreatedById = Userid;
+                    leaveType.CreatedOn = DateTime.Now;
+                    _context.Add(leaveType);
+                    await _context.SaveChangesAsync(Userid);
+                    TempData["Message"] = "Leave Type created successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(leaveType);
             }
-            return View(leaveType);
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error creating Leave Type" + ex.Message;
+                return View(leaveType);
+            }
         }
-       
+
         // GET: LeaveTypes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -108,7 +118,7 @@ namespace EmployeesManagement.Controllers
                     //Get Old Values
                     var oldleavetype = await _context.LeaveTypes.FindAsync(id);
                     leaveType.ModifiedOn = DateTime.Now;
-                    leaveType.ModifiedById = Userid; 
+                    leaveType.ModifiedById = Userid;
                     _context.Entry(oldleavetype).CurrentValues.SetValues(leaveType);
                     await _context.SaveChangesAsync(Userid);
                 }

@@ -100,38 +100,50 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(EmployeeViewModel newemployee, IFormFile employeephoto)
         {
-            var employee = new Employee();
-            _mapper.Map(newemployee, employee);
-
-            if (employeephoto.Length > 0)
+            try
             {
-                var fileName = "EmployeePhoto_" + DateTime.Now.ToString("yyyymmddhhmmss") + "_" + employeephoto.FileName;
-                var path = _configuration["FileSettings:UploadFolder"]!;
-                var filepath = Path.Combine(path, fileName);
-                var stream = new FileStream(filepath,FileMode.Create);
-                await employeephoto.CopyToAsync(stream);
-                employee.Photo = fileName;
+                var employee = new Employee();
+                _mapper.Map(newemployee, employee);
+
+                if (employeephoto != null && employeephoto.Length > 0)
+                {
+                    var fileName = "EmployeePhoto_" + DateTime.Now.ToString("yyyymmddhhmmss") + "_" + employeephoto.FileName;
+                    var path = _configuration["FileSettings:UploadFolder"]!;
+                    var filepath = Path.Combine(path, fileName);
+                    var stream = new FileStream(filepath, FileMode.Create);
+                    await employeephoto.CopyToAsync(stream);
+                    employee.Photo = fileName;
+                }
+
+                var statusId = await _context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "EmployeeStatus" && x.Code == "Active").FirstOrDefaultAsync();
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                employee.CreatedById = Userid;
+                employee.CreatedOn = DateTime.Now;
+                employee.StatusId = statusId.Id;
+
+                _context.Add(employee);
+                await _context.SaveChangesAsync(Userid);
+
+                TempData["Message"] = "Employee  Created Successfully";
+
+                return RedirectToAction(nameof(Index));
+
+
+                ViewData["DisabilityId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "DisabilityTypes"), "Id", "Description", employee.DisabilityId);
+                ViewData["BankId"] = new SelectList(_context.Banks, "Id", "Name", employee.BankId);
+                ViewData["EmploymentTermsId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "EmploymentTerms"), "Id", "Description", employee.EmploymentTermsId);
+                ViewData["GenderId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "Gender"), "Id", "Description", employee.GenderId);
+                ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name", employee.CountryId);
+                ViewData["DesignationId"] = new SelectList(_context.Designations, "Id", "Name", employee.DesignationId);
+                ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", employee.DepartmentId);
+                return View(employee);
             }
+            catch (Exception ex)
+            {
 
-            var statusId = await _context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "EmployeeStatus" && x.Code == "Active").FirstOrDefaultAsync();
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            employee.CreatedById = Userid;
-            employee.CreatedOn =DateTime.Now;
-            employee.StatusId = statusId.Id;
-
-            _context.Add(employee);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
-
-
-            ViewData["DisabilityId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "DisabilityTypes"), "Id", "Description",employee.DisabilityId);
-            ViewData["BankId"] = new SelectList(_context.Banks, "Id", "Name",employee.BankId);
-            ViewData["EmploymentTermsId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "EmploymentTerms"), "Id", "Description",employee.EmploymentTermsId);
-            ViewData["GenderId"] = new SelectList(_context.SystemCodeDetails.Include(x => x.SystemCode).Where(x => x.SystemCode.Code == "Gender"), "Id", "Description", employee.GenderId);
-            ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name",employee.CountryId);
-            ViewData["DesignationId"] = new SelectList(_context.Designations, "Id", "Name",employee.DesignationId);
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name",employee.DepartmentId);
-            return View(employee);
+                TempData["Error"] = "Employee could be created Successfully-"+ex.Message;
+                return View(newemployee);
+            }
         }
 
         // GET: Employees/Edit/5

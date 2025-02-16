@@ -61,16 +61,26 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(LeaveAdjustmentEntry leaveAdjustmentEntry)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(leaveAdjustmentEntry);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
 
-            ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Description", leaveAdjustmentEntry.AdjustmentTypeId);
-            ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveAdjustmentEntry.EmployeeId);
-            return View(leaveAdjustmentEntry);
+                if (ModelState.IsValid)
+                {
+                    _context.Add(leaveAdjustmentEntry);
+                    await _context.SaveChangesAsync();
+                    TempData["Message"] = "Leave Adjustment Entry has been created successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+
+                ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Description", leaveAdjustmentEntry.AdjustmentTypeId);
+                ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveAdjustmentEntry.EmployeeId);
+                return View(leaveAdjustmentEntry);
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error creating Leave Adjustment Entry" + ex.Message;
+                return View(leaveAdjustmentEntry);
+            }
         }
 
         // GET: LeaveAdjustmentEntries/Edit/5

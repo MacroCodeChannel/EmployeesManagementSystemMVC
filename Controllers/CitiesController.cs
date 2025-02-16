@@ -63,13 +63,20 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(City city)
         {
+            try
+            {
 
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            _context.Add(city);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                _context.Add(city);
+                await _context.SaveChangesAsync(Userid);
+                TempData["Message"] = "City created successfully";
+                return RedirectToAction(nameof(Index));
+            }catch(Exception ex)
+            {
+                TempData["Message"] = "Error creating City"+ ex.Message;
+                return View(city);
+            }
             ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name", city.CountryId);
-            return View(city);
         }
 
         // GET: Cities/Edit/5

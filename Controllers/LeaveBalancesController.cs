@@ -44,14 +44,16 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AdjustLeaveBalance(LeaveAdjustmentEntry leaveAdjustmentEntry)
         {
-           
+            try
+            {
+
                 var adjustmenttype = _context.SystemCodeDetails
                 .Include(x => x.SystemCode)
                 .Where(y => y.SystemCode.Code == "LeaveAdjustment" && y.Id == leaveAdjustmentEntry.AdjustmentTypeId)
                 .FirstOrDefault();
 
-                leaveAdjustmentEntry.AdjustmentDescription = leaveAdjustmentEntry.AdjustmentDescription +"-"+ adjustmenttype.Description;
-               leaveAdjustmentEntry.Id = 0;
+                leaveAdjustmentEntry.AdjustmentDescription = leaveAdjustmentEntry.AdjustmentDescription + "-" + adjustmenttype.Description;
+                leaveAdjustmentEntry.Id = 0;
                 var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 _context.Add(leaveAdjustmentEntry);
                 await _context.SaveChangesAsync(Userid);
@@ -65,15 +67,21 @@ namespace EmployeesManagement.Controllers
                 {
                     employee.LeaveOutStandingBalance = (employee.AllocatedLeaveDays - leaveAdjustmentEntry.NoOfDays);
                 }
-               
+
                 _context.Update(employee);
                 await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
+                TempData["Message"] = "Leave Balance Adjusted Successfully";
+                return RedirectToAction(nameof(Index));
+            }catch(Exception ex)
+            {
+                TempData["Error"] = "Error Adjusting Leave Balance" + ex.Message;
+                return View(leaveAdjustmentEntry);
+            }
 
             ViewData["LeavePeriodId"] = new SelectList(_context.LeavePeriods.Where(x => x.Closed == false), "Id", "Name",leaveAdjustmentEntry.LeavePeriodId);
             ViewData["AdjustmentTypeId"] = new SelectList(_context.SystemCodeDetails, "Id", "Description", leaveAdjustmentEntry.AdjustmentTypeId);
             ViewData["EmployeeId"] = new SelectList(_context.Employees, "Id", "FullName", leaveAdjustmentEntry.EmployeeId);
-            return View(leaveAdjustmentEntry);
+     
         }
     }
 }

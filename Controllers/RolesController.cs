@@ -40,20 +40,30 @@ namespace EmployeesManagement.Controllers
         [HttpPost]
         public async Task<ActionResult> Create(RolesViewModel model)
         {
-            IdentityRole role = new IdentityRole();
-            role.Name = model.RoleName;
+            try
+            {
 
-            var result = await _rolemanager.CreateAsync(role);
-            if (result.Succeeded)
-            {
-                return RedirectToAction("Index");
+                IdentityRole role = new IdentityRole();
+                role.Name = model.RoleName;
+
+                var result = await _rolemanager.CreateAsync(role);
+                if (result.Succeeded)
+                {
+                    TempData["Success"] = "Role Created Successfully";
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["Error"] = "Error Creating Role";
+                    return View(model);
+                }
+
             }
-            else
+            catch (Exception ex)
             {
+                TempData["Error"] = "Error Creating Role" + ex.Message;
                 return View(model);
             }
-
-
         }
 
         [HttpGet]
@@ -68,7 +78,7 @@ namespace EmployeesManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Edit(string id,RolesViewModel model)
+        public async Task<ActionResult> Edit(string id, RolesViewModel model)
         {
             var checkifexist = await _rolemanager.RoleExistsAsync(model.RoleName);
             if (!checkifexist)

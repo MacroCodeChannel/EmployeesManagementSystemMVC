@@ -61,16 +61,25 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Department department)
         {
-            var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            department.CreatedById = userid;
-            department.CreatedOn = DateTime.Now;
-            ModelState.Remove("CreatedBy");
-            ModelState.Remove("ModifiedBy");
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(department);
-                await _context.SaveChangesAsync(userid);
-                return RedirectToAction(nameof(Index));
+
+                var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                department.CreatedById = userid;
+                department.CreatedOn = DateTime.Now;
+                ModelState.Remove("CreatedBy");
+                ModelState.Remove("ModifiedBy");
+                if (ModelState.IsValid)
+                {
+                    _context.Add(department);
+                    await _context.SaveChangesAsync(userid);
+                    TempData["Message"] = "Department created successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+            }catch(Exception ex)
+            {
+                TempData["Error"] = "Error creating Department" + ex.Message;
+                return View(department);
             }
             return View(department);
         }

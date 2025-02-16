@@ -16,12 +16,12 @@ namespace EmployeesManagement.Controllers
     public class CompanyInformationsController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly IConfiguration _configuration; 
+        private readonly IConfiguration _configuration;
 
-        public CompanyInformationsController(IConfiguration configuration,ApplicationDbContext context)
+        public CompanyInformationsController(IConfiguration configuration, ApplicationDbContext context)
         {
             _context = context;
-            _configuration=configuration;
+            _configuration = configuration;
         }
 
         // GET: CompanyInformations
@@ -64,26 +64,35 @@ namespace EmployeesManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CompanyInformation companyInformation,IFormFile logo)
+        public async Task<IActionResult> Create(CompanyInformation companyInformation, IFormFile logo)
         {
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            if (logo.Length > 0)
+            try
             {
-                var fileName = "CompanyLogo_" + DateTime.Now.ToString("yyyymmddhhmmss") + "_" + logo.FileName;
-                var path = _configuration["FileSettings:UploadFolder"]!;
-                var filepath = Path.Combine(path, fileName);
-                var stream = new FileStream(filepath, FileMode.Create);
-                await logo.CopyToAsync(stream);
-                companyInformation.Logo = fileName;
+
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                if (logo != null && logo.Length > 0)
+                {
+                    var fileName = "CompanyLogo_" + DateTime.Now.ToString("yyyymmddhhmmss") + "_" + logo.FileName;
+                    var path = _configuration["FileSettings:UploadFolder"]!;
+                    var filepath = Path.Combine(path, fileName);
+                    var stream = new FileStream(filepath, FileMode.Create);
+                    await logo.CopyToAsync(stream);
+                    companyInformation.Logo = fileName;
+                }
+                _context.Add(companyInformation);
+                await _context.SaveChangesAsync(Userid);
+                TempData["Message"] = "Company Information Added Successfully";
+                return RedirectToAction(nameof(Index));
             }
-            _context.Add(companyInformation);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error creating Company Information" + ex.Message;
+                return View(companyInformation);
+            }
 
             ViewData["CityId"] = new SelectList(_context.Cities, "Id", "Name", companyInformation.CityId);
             ViewData["CountryId"] = new SelectList(_context.Countries, "Id", "Name", companyInformation.CountryId);
-            return View(companyInformation);
         }
 
         // GET: CompanyInformations/Edit/5

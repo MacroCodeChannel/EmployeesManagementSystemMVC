@@ -57,14 +57,20 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create( LeavePeriod leavePeriod)
         {
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            leavePeriod.CreatedById = Userid;
-            leavePeriod.CreatedOn = DateTime.Now;
-            _context.Add(leavePeriod);
-            await _context.SaveChangesAsync(Userid);
-            return RedirectToAction(nameof(Index));
-          
-            return View(leavePeriod);
+            try
+            {
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                leavePeriod.CreatedById = Userid;
+                leavePeriod.CreatedOn = DateTime.Now;
+                _context.Add(leavePeriod);
+                await _context.SaveChangesAsync(Userid);
+                TempData["Success"] = "Leave Period created successfully";
+                return RedirectToAction(nameof(Index));
+            }catch(Exception ex)
+            {
+                TempData["Error"] = "Error creating Leave Period" + ex.Message;
+                return View(leavePeriod);
+            }
         }
 
         // GET: LeavePeriods/Edit/5

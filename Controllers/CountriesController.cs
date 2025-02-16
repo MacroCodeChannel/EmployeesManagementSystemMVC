@@ -24,8 +24,8 @@ namespace EmployeesManagement.Controllers
         public async Task<IActionResult> Index()
         {
             var country = await _context.Countries
-                .Include(x=>x.CreatedBy)
-                .Include(x=>x.ModifiedBy)
+                .Include(x => x.CreatedBy)
+                .Include(x => x.ModifiedBy)
                 .ToListAsync();
 
             return View(country);
@@ -40,8 +40,8 @@ namespace EmployeesManagement.Controllers
             }
 
             var country = await _context.Countries
-                .Include(x=>x.CreatedBy)
-                .Include(x=>x.ModifiedBy)
+                .Include(x => x.CreatedBy)
+                .Include(x => x.ModifiedBy)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (country == null)
             {
@@ -64,17 +64,26 @@ namespace EmployeesManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Country country)
         {
-
-            var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            country.CreatedById = Userid;
-            country.CreatedOn = DateTime.Now;
-            ModelState.Remove("CreatedBy");
-            ModelState.Remove("ModifiedBy");
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(country);
-                await _context.SaveChangesAsync(Userid);
-                return RedirectToAction(nameof(Index));
+
+                var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                country.CreatedById = Userid;
+                country.CreatedOn = DateTime.Now;
+                ModelState.Remove("CreatedBy");
+                ModelState.Remove("ModifiedBy");
+                if (ModelState.IsValid)
+                {
+                    _context.Add(country);
+                    await _context.SaveChangesAsync(Userid);
+                    TempData["Message"] = "Country created successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error creating Country" + ex.Message;
+                return View(country);
             }
             return View(country);
         }
@@ -88,9 +97,9 @@ namespace EmployeesManagement.Controllers
             }
 
             var country = await _context.Countries
-                .Include(x=>x.CreatedBy)
+                .Include(x => x.CreatedBy)
                 .Include(x => x.ModifiedBy)
-                .Where(x=>x.Id==id)
+                .Where(x => x.Id == id)
                 .FirstOrDefaultAsync();
             if (country == null)
             {
@@ -117,7 +126,7 @@ namespace EmployeesManagement.Controllers
             {
                 try
                 {
-                 
+
                     var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     country.ModifiedById = Userid;
                     country.ModifiedOn = DateTime.Now;
