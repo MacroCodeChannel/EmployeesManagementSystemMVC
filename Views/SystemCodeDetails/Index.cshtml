@@ -6,9 +6,9 @@
 
 <div class="card">
     <div class="card-header">
-        <div class="mb-3 float-right">
+        <div class="mb-3 float-end">
             <a asp-action="Create" class="btn btn-primary">
-                <i class="fa fa-plus"></i> Add New System Code Detail
+                <i class="bi bi-file-plus-fill"></i> Add New System Code Detail
             </a>
         </div>
     </div>
@@ -61,19 +61,7 @@
                                 @Html.DisplayFor(modelItem => item.CreatedOn)
                             </td>
                             <td>
-                                <div class="ms-auto">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-primary">Actions</button>
-                                        <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
-                                            <span class="visually-hidden">Toggle Dropdown</span>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
-                                            <a asp-action="Edit" asp-route-id="@item.Id" class="dropdown-item"><i class='bx bxs-edit'> Edit</i></a>
-                                            <div class="dropdown-divider"></div>	
-                                            <a asp-action="Delete" asp-route-id="@item.Id" class="dropdown-item"><i class='bx bxs-trash'> Delete</i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm"><i class='bx bxs-edit'></i></a>
                             </td>
                         </tr>
                     }

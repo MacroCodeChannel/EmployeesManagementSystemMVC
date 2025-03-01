@@ -26,15 +26,15 @@
                         <input asp-for="EmailAddress" type="text" class="form-control" />
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-2">
                     <div class="col-md-2">
                         <button type="submit" class="btn btn-success w-100">
-                            <i class="fa fa-search"></i> Search
+                            <i class="bi bi-search"></i> Search
                         </button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-secondary w-100">
-                            <i class="fa fa-eraser"></i> Clear
+                        <button type="reset" class="btn btn-secondary w-100">
+                            <i class="bi bi-eraser"></i> Clear
                         </button>
                     </div>
                 </div>
@@ -44,9 +44,9 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <div class="mb-3 float-right">
+        <div class="mb-3 float-end">
             <a asp-action="Create" class="btn btn-primary">
-                <i class="fa fa-plus"></i> Add New Employee
+                <i class="bi bi-file-plus-fill"></i> Add New Employee
             </a>
         </div>
     </div>
@@ -114,8 +114,7 @@
                                             <a asp-action="Edit" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-edit"> Edit</i> </a>
                                             <div class="dropdown-divider"></div>
                                             <a asp-action="Details" asp-route-id="@item.Id" class="dropdown-item"><i class="bx bxs-bullseye"> View</i></a>
-                                            <div class="dropdown-divider"></div>
-                                            <a asp-action="Delete" asp-route-id="@item.Id" class="dropdown-item"><i class='bx bxs-trash'> Delete</i></a>
+
                                         </div>
                                     </div>
                                 </div>

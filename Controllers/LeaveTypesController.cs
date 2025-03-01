@@ -26,7 +26,11 @@ namespace EmployeesManagement.Controllers
         // GET: LeaveTypes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.LeaveTypes.ToListAsync());
+            var listtypes = await _context.LeaveTypes
+                .Include(x=>x.CreatedBy)
+                .Include(x => x.ModifiedBy)
+                .ToListAsync();
+            return View(listtypes);
         }
 
         // GET: LeaveTypes/Details/5

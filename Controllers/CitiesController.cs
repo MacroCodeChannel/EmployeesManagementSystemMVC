@@ -117,6 +117,8 @@ namespace EmployeesManagement.Controllers
                     var Userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     _context.Update(city);
                     await _context.SaveChangesAsync(Userid);
+
+                    TempData["Message"] = "City updated successfully";
                 }
                 catch (DbUpdateConcurrencyException)
                 {

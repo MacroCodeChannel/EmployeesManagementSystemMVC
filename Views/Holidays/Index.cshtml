@@ -1,11 +1,9 @@
 ﻿@model EmployeesManagement.ViewModels.HolidayViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Holidays";
 }
-<p>
-    <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Holiday</a>
-</p>
+
 <div class="card">
     <div class="card-body">
         <div class="col-md-12">
@@ -27,15 +25,17 @@
                         <label asp-for="EndDate" class="control-label"></label>
                         <input asp-for="EndDate" type="date" class="form-control" />
                     </div>
-                    <div class="col-md-2 mt-20">
-                        <button type="submit" class="btn btn-success btn-block mt-20">
-                            <i class="fa fa-search"></i> Search
-                        </button>
-                    </div>
-                    <div class="col-md-2 mt-20">
-                        <button type="button" class="btn btn-default btn-block mt-20">
-                            <i class="fa fa-eraser"></i> Clear
-                        </button>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-success w-100">
+                                <i class="bi bi-search"></i> Search
+                            </button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="reset" class="btn btn-secondary w-100">
+                                <i class="bi bi-eraser"></i> Clear
+                            </button>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -44,7 +44,11 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Holidays List</h3>
+        <div class="mb-3 float-end">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-file-plus-fill"></i> Add New Holiday
+            </a>
+        </div>
     </div>
     <div class="card-body">
         <div class="table-responsive">

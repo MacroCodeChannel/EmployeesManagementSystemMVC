@@ -11,6 +11,7 @@ using System.Security.Claims;
 using EmployeesManagement.ViewModels;
 using AutoMapper;
 using System.Linq.Expressions;
+using EmployeesManagement.Helpers;
 
 namespace EmployeesManagement.Controllers
 {
@@ -29,32 +30,37 @@ namespace EmployeesManagement.Controllers
         // GET: Employees
         public async Task<IActionResult> Index(EmployeeViewModel employees)
         {
+
+            Expression<Func<Employee, bool>> filter = x => x.Id > 0;
+            Expression<Func<Employee, bool>> filters ;
+
             var rawdata = _context.Employees.Include(x=>x.Status).AsQueryable();
+
             if (!string.IsNullOrEmpty(employees.FullName.Trim()))
             {
-                rawdata = rawdata
-                    .Where(x => x.FullName.Contains(employees.FullName));
+                filters = x => x.FullName.Contains(employees.FullName);
+                filter = filter.And(filters);
             }
 
             if (employees.PhoneNumber > 0)
             {
-                rawdata = rawdata
-                    .Where(x => x.PhoneNumber == employees.PhoneNumber);
+                filters = x => x.PhoneNumber == employees.PhoneNumber;
+                filter = filter.And(filters);
             }
 
             if (!string.IsNullOrEmpty(employees.EmailAddress))
             {
-                rawdata = rawdata
-                    .Where(x => x.EmailAddress == employees.EmailAddress);
+                filters = x => x.EmailAddress == employees.EmailAddress;
+                filter = filter.And(filters);
             }
 
             if (!string.IsNullOrEmpty(employees.EmpNo))
             {
-                rawdata = rawdata
-                    .Where(x => x.EmpNo == employees.EmpNo);
+                filters = x => x.EmpNo == employees.EmpNo;
+                filter = filter.And(filters);
             }
 
-            employees.Employees = await rawdata.ToListAsync();
+            employees.Employees = await rawdata.Where(filter).ToListAsync();
 
             return View(employees);
         }

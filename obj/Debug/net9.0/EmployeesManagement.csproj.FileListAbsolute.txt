@@ -1018,3 +1018,5 @@ D:\Content Creation\.NET Core Projects\EmployeesManagement\obj\Debug\net9.0\refi
 D:\Content Creation\.NET Core Projects\EmployeesManagement\obj\Debug\net9.0\EmployeesManagement.pdb
 D:\Content Creation\.NET Core Projects\EmployeesManagement\obj\Debug\net9.0\EmployeesManagement.genruntimeconfig.cache
 D:\Content Creation\.NET Core Projects\EmployeesManagement\obj\Debug\net9.0\ref\EmployeesManagement.dll
+D:\Content Creation\.NET Core Projects\EmployeesManagement\obj\Debug\net9.0\compressed\r2lmzzzsgw-hvpfc5wclt.gz
+D:\Content Creation\.NET Core Projects\EmployeesManagement\obj\Debug\net9.0\compressed\hgngdlhhlw-8d1bb9l787.gz

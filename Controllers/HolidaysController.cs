@@ -9,6 +9,8 @@ using EmployeesManagement.Data;
 using EmployeesManagement.Models;
 using System.Security.Claims;
 using EmployeesManagement.ViewModels;
+using System.Linq.Expressions;
+using EmployeesManagement.Helpers;
 
 namespace EmployeesManagement.Controllers
 {
@@ -24,27 +26,35 @@ namespace EmployeesManagement.Controllers
         // GET: Holidays
         public async Task<IActionResult> Index(HolidayViewModel vm)
         {
+            Expression<Func<Holiday, bool>> filter = x => x.Id > 0;
+            Expression<Func<Holiday, bool>> filters;
+
             var holidays =  _context.Holidays
                 .Include(x=>x.CreatedBy)
                 .AsQueryable();
+
             if (!string.IsNullOrEmpty(vm.Title))
             {
-                holidays = holidays.Where (x=>x.Title.Contains(vm.Title));
+                filters = x => x.Title.Contains(vm.Title);
+                filter = filter.And(filters);
             }
             if (!string.IsNullOrEmpty(vm.Description))
             {
-                holidays = holidays.Where(x => x.Description.Contains(vm.Description));
+                filters = x => x.Description.Contains(vm.Description);
+                filter = filter.And(filters);
             }
             if (vm.EndDate !=null)
             {
-                holidays = holidays.Where(x => x.EndDate ==vm.EndDate);
+                filters = x => x.EndDate == vm.EndDate;
+                filter = filter.And(filters);
             }
             if (vm.StartDate != null)
             {
-                holidays = holidays.Where(x => x.StartDate == vm.StartDate);
+                filters = x => x.StartDate == vm.StartDate;
+                filter = filter.And(filters);
             }
 
-            vm.Holidays = await holidays.ToListAsync();
+            vm.Holidays = await holidays.Where(filter).ToListAsync();
 
             return View(vm);
         }
@@ -137,7 +147,9 @@ namespace EmployeesManagement.Controllers
                 {
                     _context.Update(holiday);
                     await _context.SaveChangesAsync(Userid);
-                }
+
+                TempData["Message"] = "Holiday updated successfully";
+            }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!HolidayExists(holiday.Id))

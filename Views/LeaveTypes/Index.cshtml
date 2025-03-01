@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<EmployeesManagement.Models.LeaveType>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Leave Types";
 }
-
-<p>
-    <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Type</a>
-</p>
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Leave Type List</h3>
+        <div class="mb-3 float-end">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-file-plus-fill"></i> Add New Type
+            </a>
+        </div>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -42,7 +42,7 @@
                                 @Html.DisplayFor(modelItem => item.Name)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.CreatedById)
+                                @Html.DisplayFor(modelItem => item.CreatedBy.FullName)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.CreatedOn)

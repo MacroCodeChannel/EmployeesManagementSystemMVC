@@ -1,12 +1,17 @@
 ﻿@model IEnumerable<EmployeesManagement.Models.Department>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Departments";
 }
-<p>
-    <a asp-action="Create" class="btn btn-primary"> <i class="fa fa-plus"></i> Add New Department</a>
-</p>
+
 <div class="card">
+    <div class="card-header">
+        <div class="mb-3 float-end">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-file-plus-fill"></i> Add New Department
+            </a>
+        </div>
+    </div>
     <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
             <thead>
@@ -24,7 +29,6 @@
                         @Html.DisplayNameFor(model => model.CreatedOn)
                     </th>
                     <th>Edit</th>
-                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,10 +48,7 @@
                             @Html.DisplayFor(modelItem => item.CreatedOn)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-eye"></i> Edit</a>
-                        </td>
-                        <td>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm"><i class='bx bxs-edit'></i></a>
                         </td>
                     </tr>
                 }

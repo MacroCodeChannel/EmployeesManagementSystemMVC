@@ -122,6 +122,8 @@ namespace EmployeesManagement.Controllers
                 bank.ModifiedOn = DateTime.Now;
                 _context.Update(bank);
                 await _context.SaveChangesAsync(Userid);
+
+                TempData["Message"] = "Bank updated successfully";
             }
             catch (DbUpdateConcurrencyException)
             {

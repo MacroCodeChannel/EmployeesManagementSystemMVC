@@ -1,5 +1,77 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.10.5\font\bootstrap-icons.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Qw/msBvnCNnMNMGKMjZzkUfMscaYLE2RRJzPVNyRDB8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"93738"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Qw/msBvnCNnMNMGKMjZzkUfMscaYLE2RRJzPVNyRDB8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:21:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/bootstrap-icons.hvpfc5wclt.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.10.5\font\bootstrap-icons.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hvpfc5wclt"},{"Name":"integrity","Value":"sha256-Qw/msBvnCNnMNMGKMjZzkUfMscaYLE2RRJzPVNyRDB8="},{"Name":"label","Value":"_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/bootstrap-icons.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"93738"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Qw/msBvnCNnMNMGKMjZzkUfMscaYLE2RRJzPVNyRDB8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:21:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/fonts/bootstrap-iconse52a.1il368ywn8.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.10.5\font\fonts\bootstrap-iconse52a.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1il368ywn8"},{"Name":"integrity","Value":"sha256-mZVQ\u002Bvv7wOBHSztclF3yh7B50qI9wH3MYkCn0vGOCB0="},{"Name":"label","Value":"_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/fonts/bootstrap-iconse52a.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"164360"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022mZVQ\u002Bvv7wOBHSztclF3yh7B50qI9wH3MYkCn0vGOCB0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:26:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/fonts/bootstrap-iconse52a.jr72lnarce.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.10.5\font\fonts\bootstrap-iconse52a.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jr72lnarce"},{"Name":"integrity","Value":"sha256-z\u002BRbmB0bkbFzNho0z85fYIk9vRrEryw6wR/BdVLFQB8="},{"Name":"label","Value":"_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/fonts/bootstrap-iconse52a.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"121340"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022z\u002BRbmB0bkbFzNho0z85fYIk9vRrEryw6wR/BdVLFQB8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:26:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/fonts/bootstrap-iconse52a.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.10.5\font\fonts\bootstrap-iconse52a.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mZVQ\u002Bvv7wOBHSztclF3yh7B50qI9wH3MYkCn0vGOCB0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"164360"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022mZVQ\u002Bvv7wOBHSztclF3yh7B50qI9wH3MYkCn0vGOCB0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:26:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.10.5/font/fonts/bootstrap-iconse52a.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.10.5\font\fonts\bootstrap-iconse52a.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-z\u002BRbmB0bkbFzNho0z85fYIk9vRrEryw6wR/BdVLFQB8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"121340"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022z\u002BRbmB0bkbFzNho0z85fYIk9vRrEryw6wR/BdVLFQB8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:26:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/bootstrap-icons.8d1bb9l787.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.5.0\font\bootstrap-icons.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8d1bb9l787"},{"Name":"integrity","Value":"sha256-rJq1ckmuZQtjgHT6LxfQLhBBvI3Clb3X2qI5RlDr340="},{"Name":"label","Value":"_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/bootstrap-icons.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"65700"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rJq1ckmuZQtjgHT6LxfQLhBBvI3Clb3X2qI5RlDr340=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:26:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.5.0\font\bootstrap-icons.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rJq1ckmuZQtjgHT6LxfQLhBBvI3Clb3X2qI5RlDr340="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"65700"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rJq1ckmuZQtjgHT6LxfQLhBBvI3Clb3X2qI5RlDr340=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:26:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons63f3.1b328vrd37.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.5.0\font\fonts\bootstrap-icons63f3.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1b328vrd37"},{"Name":"integrity","Value":"sha256-w65Ia96N0QPyBYAPKofBeMuIOIM9IWo85wdBwHzfYjM="},{"Name":"label","Value":"_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons63f3.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"120468"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022w65Ia96N0QPyBYAPKofBeMuIOIM9IWo85wdBwHzfYjM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:29:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons63f3.umcyo9ouu3.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.5.0\font\fonts\bootstrap-icons63f3.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"umcyo9ouu3"},{"Name":"integrity","Value":"sha256-dlBuEo8rR7cXn1A3vYhaFnRFX/62tQk820x\u002B779DbOg="},{"Name":"label","Value":"_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons63f3.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"90528"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022dlBuEo8rR7cXn1A3vYhaFnRFX/62tQk820x\u002B779DbOg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:29:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons63f3.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.5.0\font\fonts\bootstrap-icons63f3.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w65Ia96N0QPyBYAPKofBeMuIOIM9IWo85wdBwHzfYjM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"120468"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022w65Ia96N0QPyBYAPKofBeMuIOIM9IWo85wdBwHzfYjM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:29:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons63f3.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bootstrap-icons@1.5.0\font\fonts\bootstrap-icons63f3.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dlBuEo8rR7cXn1A3vYhaFnRFX/62tQk820x\u002B779DbOg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"90528"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022dlBuEo8rR7cXn1A3vYhaFnRFX/62tQk820x\u002B779DbOg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Mar 2024 12:29:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EmployeesManagement/assets/css/app.0pbcyn7eue.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

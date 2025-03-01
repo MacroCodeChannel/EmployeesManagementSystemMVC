@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\EmployeesManagement.ces10fwmny.bundle.scp.css"
     },
     {
+      "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\bootstrap-icons@1.10.5\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap-icons@1.10.5\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\bootstrap-icons@1.10.5\\font\\fonts\\bootstrap-iconse52a.woff",
+      "PackagePath": "staticwebassets\\assets\\bootstrap-icons@1.10.5\\font\\fonts\\bootstrap-iconse52a.woff"
+    },
+    {
+      "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\bootstrap-icons@1.10.5\\font\\fonts\\bootstrap-iconse52a.woff2",
+      "PackagePath": "staticwebassets\\assets\\bootstrap-icons@1.10.5\\font\\fonts\\bootstrap-iconse52a.woff2"
+    },
+    {
+      "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\bootstrap-icons@1.5.0\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap-icons@1.5.0\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\bootstrap-icons@1.5.0\\font\\fonts\\bootstrap-icons63f3.woff",
+      "PackagePath": "staticwebassets\\assets\\bootstrap-icons@1.5.0\\font\\fonts\\bootstrap-icons63f3.woff"
+    },
+    {
+      "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\bootstrap-icons@1.5.0\\font\\fonts\\bootstrap-icons63f3.woff2",
+      "PackagePath": "staticwebassets\\assets\\bootstrap-icons@1.5.0\\font\\fonts\\bootstrap-icons63f3.woff2"
+    },
+    {
       "Id": "D:\\Content Creation\\.NET Core Projects\\EmployeesManagement\\wwwroot\\assets\\css\\app.css",
       "PackagePath": "staticwebassets\\assets\\css\\app.css"
     },

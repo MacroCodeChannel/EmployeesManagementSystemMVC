@@ -123,6 +123,8 @@ namespace EmployeesManagement.Controllers
                 {
                     _context.Update(department);
                     await _context.SaveChangesAsync(userid);
+
+                    TempData["Message"] = "Department updated successfully";
                 }
                 catch (DbUpdateConcurrencyException)
                 {

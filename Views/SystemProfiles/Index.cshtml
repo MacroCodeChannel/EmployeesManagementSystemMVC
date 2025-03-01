@@ -30,12 +30,6 @@
                         <th>
                             @Html.DisplayNameFor(model => model.CreatedOn)
                         </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.ModifiedById)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.ModifiedOn)
-                        </th>
                         <th>Edit</th>
                         <th>View</th>
                         <th>Delete</th>
@@ -55,16 +49,10 @@
                                 @Html.DisplayFor(modelItem => item.Order)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.CreatedById)
+                                @Html.DisplayFor(modelItem => item.CreatedBy.FullName)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.CreatedOn)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.ModifiedById)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.ModifiedOn)
                             </td>
                             <td>
                                 <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.Id"><i class="fa fa-edit"></i> Edit</a>

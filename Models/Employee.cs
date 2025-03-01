@@ -1,5 +1,6 @@
 ﻿using EmployeesManagement.Controllers;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmployeesManagement.Models
 {
@@ -26,7 +27,6 @@ namespace EmployeesManagement.Models
 
 
         [DisplayName("Email Address")]
-
         public string EmailAddress { get; set; }
 
         [DisplayName("Country Name")]
@@ -55,15 +55,21 @@ namespace EmployeesManagement.Models
 
 
         [DisplayName("Employment Date")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd}")]
         public DateTime? EmploymentDate { get; set; }
 
         public int? StatusId { get; set; }
         public SystemCodeDetail Status { get; set; }
 
+        [DisplayName("Inactive Date")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd}")]
         public DateTime? InactiveDate { get; set; }
         public int? CauseofInactivityId { get; set; }
         public SystemCodeDetail CauseofInactivity { get; set; }
 
+
+        [DisplayName("Termination Date")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd}")]
         public DateTime? TerminationDate { get; set; }
         public int? ReasonforterminationId { get; set; }
         public SystemCodeDetail Reasonfortermination { get; set; }

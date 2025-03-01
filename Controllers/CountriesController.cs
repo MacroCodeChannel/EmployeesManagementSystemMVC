@@ -132,6 +132,9 @@ namespace EmployeesManagement.Controllers
                     country.ModifiedOn = DateTime.Now;
                     _context.Update(country);
                     await _context.SaveChangesAsync(Userid);
+
+
+                    TempData["Message"] = "Country updated successfully";
                 }
                 catch (DbUpdateConcurrencyException)
                 {

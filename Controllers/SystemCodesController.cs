@@ -130,6 +130,8 @@ namespace EmployeesManagement.Controllers
                     systemCode.ModifiedOn = DateTime.Now;
                     _context.Update(systemCode);
                     await _context.SaveChangesAsync(Userid);
+
+                    TempData["Message"] = "System Code updated successfully";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -179,6 +181,8 @@ namespace EmployeesManagement.Controllers
             }
 
             await _context.SaveChangesAsync(Userid);
+
+            TempData["Message"] = "System Code deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 
